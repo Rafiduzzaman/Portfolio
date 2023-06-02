@@ -1,3 +1,208 @@
-.body {
-  color: red;
+body {
+  background-color: #1c1a19;
+  margin: 0 0 0 0;
+}
+@media (max-width: 365px) {
+  .container {
+    display: flex;
+    background-color: #3c3a39;
+    height: 92px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-end;
+
+  }
+  *.logo {
+    padding-left: 24px;
+    padding-bottom: 12px;
+  }
+  .menu {
+    padding-right: 35px;
+    padding-bottom: 18px;
+  }
+  .h1 {
+    font-family: "Crete Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: 0.36px;
+    color: #ff6b00;
+    margin-top: 120px;
+    margin-left: 24px;
+  }
+  .h2 {
+    width: 327px;
+    height: 27px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff5e1;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .h3 {
+    width: 327px;
+    height: 123px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-top: 12px;
+    margin-left: 24px;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 151px;
+    margin-left: 24px;
+  }
+  .illustration {
+    display: flex;
+    margin-left: 228px;
+    margin-top: -200px;
+    margin-bottom: 44.38px;
+  }
+  .part-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .pf {
+    display: none;
+  }
+
+  .big_illustration {
+    display: none;
+  }
+}
+@media (min-width: 366px) {
+  .container {
+    display: flex;
+    background-color: #3c3a39;
+    height: 72px;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    margin-left: 154px;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  .rec {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+  }
+  .pf {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10%;
+  }
+  .part1 {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 192px 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 566px;
+    height: 739px;
+    left: 143px;
+    top: 72px;
+  }
+  .illustration {
+    display: none;
+  }
+  .pics {
+    display: flex;
+    position: absolute;
+    width: 20px;
+    height: 50%;
+    left: 36px;
+    top: 394px;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .h1 {
+    font-family: "Crete Round";
+    font-style: normal;
+    font-size: 58px;
+    line-height: 82px;
+    /* or 113% */
+
+    color: #f55800;
+  }
+  .h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    /* or 138% */
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+  }
+  .h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+
+    /* Neutrals/N20 */
+
+    color: #f4f5f7;
+  }
+
 }
