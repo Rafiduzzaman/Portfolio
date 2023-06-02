@@ -11,7 +11,7 @@ body {
   background-color: blue;
 }
 
-@media (max-width: 365px) {
+@media (max-width: 500px) {
   .container {
     white-space: nowrap;
     display: flex;
@@ -209,9 +209,11 @@ body {
   .h1 {
     font-family: "Crete Round", sans-serif;
     font-style: normal;
-    font-size: 58px;
-    line-height: 82px;
     color: #f55800;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
   }
 
   .h2 {
