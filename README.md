@@ -51,7 +51,9 @@ html,css
 
 A simple webpage with contact info and a breif description
 
-- **[]**
+- **[Button_animation]**
+- **[links]**
+- **[Design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
