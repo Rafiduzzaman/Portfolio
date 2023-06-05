@@ -42,12 +42,12 @@ body {
   }
 
   /* Logo design */
-  .logo a{
+  .logo a {
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     color: white;
   }
-  .logo{
+  .logo {
     margin-left: 10%;
     margin-bottom: 5%;
   }
@@ -125,13 +125,6 @@ body {
     padding-top: 40%;
     padding-right: 5%;
   }
-
-  /* social media icons padding */
-  .sm {
-    display: flex;
-    margin-top: 10%;
-  }
-
   .btn {
     border: none;
     outline: none;
@@ -140,124 +133,156 @@ body {
 }
 
 @media (min-width: 366px) {
-  .container {
+  /* Background color */
+  body {
+    background-image: url("images/Illustration-header.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 100% -10%;
+    background-size: 35%;
     display: flex;
-    background-color: #3c3a39;
-    height: 72px;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: center;
+    flex-direction: column;
   }
-
+  /* menu bar disappear */
   .menu {
     display: none;
   }
+  /* navigation panel design */
+  nav {
+    display: flex;
+    flex-direction: row;
+    background: #3c3a39;
+    height: 72px;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-end;
+  }
+  .nav_bar_contents {
+    width: 20%;
+    margin-right: 10%;
+  }
+  #nbc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* list items design */
+  li {
+    size: 100%;
+  }
 
+  /* Logo design */
   .logo a {
-    margin-left: 154px;
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
     color: white;
   }
-
-  .portfolio {
+  .logo {
     display: flex;
-    flex-direction: row;
+    height: 100%;
+    width: 25%;
+    size: 100%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: center;
     align-items: center;
-    padding: 10px 12px;
-    gap: 10px;
   }
-
-  .about {
+  .body-2 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 12px;
-    gap: 10px;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 12px;
-    gap: 10px;
-  }
-
-  .rec {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
-  }
-
-  .pf {
-    display: flex;
-    flex-direction: row;
-    padding-right: 10%;
-  }
-
-  .part1 {
+    width: 50%;
+    height: 100%;
+    margin-top: 15%;
+    margin-left: 2%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 192px 0;
-    gap: 24px;
-    position: absolute;
-    width: 566px;
-    height: 739px;
-    left: 143px;
-    top: 72px;
-  }
-
-  .illustration {
-    display: none;
-  }
-
-  .pics {
-    display: flex;
-    position: absolute;
-    width: 20px;
-    height: 50%;
-    left: 36px;
-    top: 394px;
-    align-content: center;
     justify-content: space-around;
-    flex-direction: column;
+    align-items: flex-start;
   }
-
+  .txt {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
   .h1 {
     font-family: "Crete Round", serif;
-    color: #f55800;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-  }
+    /* or 113% */
 
+    color: #f55800;
+  }
   .h2 {
+    padding-top: 3%;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 44px;
+    /* or 138% */
+
     display: flex;
     align-items: center;
-    color: #fff;
-  }
 
+    color: #ffffff;
+  }
   .h3 {
-    font-family: "Inter", sans-serif;
+    padding-top: 3%;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    /* or 160% */
+
+    /* Neutrals/N20 */
+
     color: #f4f5f7;
+  }
+
+  #sm {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5%;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+  }
+ 
+  li{
+  margin: 5%;  
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    background-color: #3c3a39;
+    border: 0;
+  }
+  .btn {
+    border: none;
+    outline: none;
+    background-color: #1c1a19;
   }
 }
