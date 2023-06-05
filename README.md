@@ -33,7 +33,7 @@
 
 My Portfolio 
 
-**[My_Portfolio]** is a webpage made with html and css
+**[My_Portfolio]** is a dynamic and visually appealing webpage that serves as an interactive showcase of my skills, experiences, and projects. Built using HTML and CSS, this portfolio website aims to present my professional profile in an engaging and professional manner.
 
 ## 🛠 Built With <a name="built-with">html and css</a>
 
@@ -42,7 +42,8 @@ My Portfolio
 Html and Css is used
 
 <details>
-html,css
+HTML
+CSS
 </details>
 
 <!-- Features -->
@@ -68,13 +69,16 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-VScode
+- You need to have NodeJS installed
+- A Web Browser Google Chrome, Firefox, etc
+- A Code Edit
+- or VSCode, Atom etc 
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-  git clone git@github.com:Rdzaman20000/First-mini-Project.git
+  git clone git@github.com:Rdzaman20000/Portfolio.git
 
 ### Install
 
@@ -120,7 +124,7 @@ I will add javascript for user interface and database connection
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](../Portfolio/issues.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

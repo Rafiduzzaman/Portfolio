@@ -42,11 +42,14 @@ body {
   }
 
   /* Logo design */
-  .logo {
-    padding-left: 10%;
-    padding-bottom: 4%;
+  .logo a{
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
     color: white;
+  }
+  .logo{
+    margin-left: 10%;
+    margin-bottom: 5%;
   }
 
   /* Menu bar padding */
@@ -150,8 +153,10 @@ body {
     display: none;
   }
 
-  .logo {
+  .logo a {
     margin-left: 154px;
+    text-decoration: none;
+    color: white;
   }
 
   .portfolio {
