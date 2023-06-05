@@ -47,6 +47,7 @@ body {
     text-decoration: none;
     color: white;
   }
+
   .logo {
     margin-left: 10%;
     margin-bottom: 5%;
@@ -125,6 +126,7 @@ body {
     padding-top: 40%;
     padding-right: 5%;
   }
+
   .btn {
     border: none;
     outline: none;
@@ -143,10 +145,12 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   /* menu bar disappear */
   .menu {
     display: none;
   }
+
   /* navigation panel design */
   nav {
     display: flex;
@@ -159,10 +163,12 @@ body {
     align-items: center;
     align-items: flex-end;
   }
+
   .nav_bar_contents {
     width: 20%;
     margin-right: 10%;
   }
+
   #nbc {
     width: 100%;
     display: flex;
@@ -173,9 +179,11 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
   /* list items design */
   li {
     size: 100%;
+    margin: 5%;
   }
 
   /* Logo design */
@@ -184,6 +192,7 @@ body {
     text-decoration: none;
     color: white;
   }
+
   .logo {
     display: flex;
     height: 100%;
@@ -197,8 +206,8 @@ body {
     justify-content: center;
     align-items: center;
   }
+
   .body-2 {
-    display: flex;
     width: 50%;
     height: 100%;
     margin-top: 15%;
@@ -208,9 +217,8 @@ body {
     justify-content: space-around;
     align-items: flex-start;
   }
+
   .txt {
-    width: 10%;
-    height: 100%;
     display: flex;
     width: 75%;
     height: 100%;
@@ -218,16 +226,19 @@ body {
     align-items: flex-start;
     justify-content: space-around;
   }
+
   .h1 {
     font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
+
     /* or 113% */
 
     color: #f55800;
   }
+
   .h2 {
     padding-top: 3%;
     font-family: "Inter", sans-serif;
@@ -235,20 +246,22 @@ body {
     font-weight: 500;
     font-size: 28px;
     line-height: 44px;
+
     /* or 138% */
 
     display: flex;
     align-items: center;
-
-    color: #ffffff;
+    color: #fff;
   }
+
   .h3 {
     padding-top: 3%;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+
     /* or 160% */
 
     /* Neutrals/N20 */
@@ -263,23 +276,20 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 5%;
-    width: 200px;
-    height: 40px;
     align-items: center;
   }
- 
-  li{
-  margin: 5%;  
-  }
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   img {
     background-color: #3c3a39;
     border: 0;
   }
+
   .btn {
     border: none;
     outline: none;
