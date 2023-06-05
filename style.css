@@ -1,117 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* body colour */
 body {
   background-color: #1c1a19;
-  margin: 0 0 0 0;
+  width: 100%;
 }
 
-.btn {
-  background: transparent;
-}
-
-.btn:active {
-  background-color: blue;
-}
-
-@media (max-width: 500px) {
-  .container {
-    white-space: nowrap;
-    display: flex;
-    background-color: #3c3a39;
-    height: 92px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    align-items: flex-end;
-  }
-
-  *.logo {
-    padding-left: 24px;
-    padding-bottom: 12px;
-  }
-
-  .menu {
-    padding-right: 35px;
-    padding-bottom: 18px;
-  }
-
-  .h1 {
-    font-family: "Crete Round", serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.36px;
-    color: #ff6b00;
-    margin-top: 120px;
-    margin-left: 24px;
-    font-size: 58px;
-    line-height: 82px;
-  }
-
-  .h2 {
-    width: 327px;
-    height: 27px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    color: #fff5e1;
-    display: flex;
-    align-items: center;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .h3 {
-    width: 327px;
-    height: 123px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-    margin-top: 12px;
-    margin-left: 24px;
-    padding-top: 5%;
-  }
-
-  .body {
+@media (max-width: 365px) {
+  /* Background color */
+  body {
+    background-image: url("images/illustrations.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 100% 200%;
     display: flex;
     flex-direction: column;
   }
 
-  .sm {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 151px;
-    margin-left: 24px;
-    margin-top: 10%;
-  }
-
-  .illustration {
-    display: flex;
-    margin-left: 228px;
-    margin-top: -200px;
-    margin-bottom: 44.38px;
-  }
-
-  .part-1 {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .pf {
+  /* Navigation Bar Contents hide for mobile */
+  .nav_bar_contents {
     display: none;
   }
 
-  .big_illustration {
-    display: none;
+  /* Navigation Bar Design */
+  nav {
+    display: flex;
+    flex-direction: row;
+    background: #3c3a39;
+    height: 72px;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-end;
   }
 
-  .pics {
+  /* Logo design */
+  .logo {
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+
+  /* Menu bar padding */
+  .menu {
+    padding-right: 10%;
+    padding-bottom: 4%;
+  }
+  /* List styles */
+  ul {
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* social media icons design */
+  #sm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 5%;
+    width: 200px;
+    height: 40px;
+  }
+  img {
+    background-color: #1c1a19;
+    border: 0px;
+  }
+  /* header texts design */
+  .h1 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 10%;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+    padding-bottom: 5%;
+  }
+  .h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 10%;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #fff5e1;
+    padding-bottom: 5%;
+  }
+  .h3 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* text-align: justify; */
+    line-height: 24px;
+    color: #ffffff;
+    padding-bottom: 5%;
+  }
+  /* body content texts padding margin design */
+  .body-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-top: 40%;
+    padding-right: 5%;
+  }
+  /* social media icons padding */
+  .sm {
+    display: flex;
+    margin-top: 10%;
+  }
+  .btn{
+    border: none;
+    outline: none;
+    background-color: #1c1a19;
   }
 }
 
@@ -207,8 +218,7 @@ body {
   }
 
   .h1 {
-    font-family: "Crete Round", sans-serif;
-    font-style: normal;
+    font-family: "Crete Round", serif;
     color: #f55800;
     font-style: normal;
     font-weight: 400;
