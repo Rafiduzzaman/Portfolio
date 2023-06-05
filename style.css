@@ -166,7 +166,6 @@ body {
     display: flex;
     width: 20%;
     padding-right: 10%;
-    
   }
 
   #nbc {
@@ -220,7 +219,6 @@ body {
   .txt {
     display: flex;
     width: 75%;
-    
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
@@ -274,7 +272,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     align-items: center;
   }
 
