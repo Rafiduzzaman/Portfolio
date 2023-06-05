@@ -5,6 +5,7 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 /* body colour */
 body {
   background-color: #1c1a19;
@@ -17,7 +18,7 @@ body {
     background-image: url("images/illustrations.png");
     background-repeat: no-repeat;
     background-origin: content-box;
-    background-position: 100% 200%;
+    background-position: 100% 180%;
     display: flex;
     flex-direction: column;
   }
@@ -53,13 +54,14 @@ body {
     padding-right: 10%;
     padding-bottom: 4%;
   }
+
   /* List styles */
   ul {
-    list-style-type: none;
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   /* social media icons design */
   #sm {
     display: flex;
@@ -69,10 +71,12 @@ body {
     width: 200px;
     height: 40px;
   }
+
   img {
     background-color: #1c1a19;
-    border: 0px;
+    border: 0;
   }
+
   /* header texts design */
   .h1 {
     font-family: "Crete Round", serif;
@@ -84,6 +88,7 @@ body {
     color: #ff6b00;
     padding-bottom: 5%;
   }
+
   .h2 {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -95,16 +100,19 @@ body {
     color: #fff5e1;
     padding-bottom: 5%;
   }
+
   .h3 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+
     /* text-align: justify; */
     line-height: 24px;
-    color: #ffffff;
+    color: #fff;
     padding-bottom: 5%;
   }
+
   /* body content texts padding margin design */
   .body-2 {
     display: flex;
@@ -114,12 +122,14 @@ body {
     padding-top: 40%;
     padding-right: 5%;
   }
+
   /* social media icons padding */
   .sm {
     display: flex;
     margin-top: 10%;
   }
-  .btn{
+
+  .btn {
     border: none;
     outline: none;
     background-color: #1c1a19;
