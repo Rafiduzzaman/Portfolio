@@ -12,7 +12,7 @@ body {
   width: 100%;
 }
 
-@media (max-width: 365px) {
+@media (min-width: 365px) {
   /* Background color */
   body {
     background-image: url("images/illustrations.png");
@@ -134,7 +134,7 @@ body {
   }
 }
 
-@media (min-width: 366px) {
+@media (min-width: 765px) {
   /* Background color */
   body {
     background-image: url("images/Illustration-header.png");
@@ -154,19 +154,19 @@ body {
   /* navigation panel design */
   nav {
     display: flex;
-    flex-direction: row;
     background: #3c3a39;
     height: 72px;
     width: 100%;
     margin: 0;
     justify-content: space-between;
-    align-items: center;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .nav_bar_contents {
+    display: flex;
     width: 20%;
-    margin-right: 10%;
+    padding-right: 10%;
+    
   }
 
   #nbc {
@@ -208,9 +208,8 @@ body {
   }
 
   .body-2 {
+    padding-top: 10%;
     width: 50%;
-    height: 100%;
-    margin-top: 15%;
     margin-left: 2%;
     display: flex;
     flex-direction: row-reverse;
@@ -221,7 +220,7 @@ body {
   .txt {
     display: flex;
     width: 75%;
-    height: 100%;
+    
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
@@ -275,7 +274,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 5%;
+    
     align-items: center;
   }
 
