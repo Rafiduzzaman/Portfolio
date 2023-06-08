@@ -1,9 +1,10 @@
-* {
-  padding: 0;
+html,
+body {
+  width: 100%;
+  height: 100%;
   margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* body colour */
@@ -13,16 +14,6 @@ body {
 }
 
 @media (min-width: 365px) {
-  /* Background color */
-  body {
-    background-image: url("images/illustrations.png");
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    background-position: 100% 180%;
-    display: flex;
-    flex-direction: column;
-  }
-
   /* Navigation Bar Contents hide for mobile */
   .nav_bar_contents {
     display: none;
@@ -71,6 +62,7 @@ body {
     padding-top: 5%;
     width: 200px;
     height: 40px;
+    margin-bottom: 30%;
   }
 
   img {
@@ -122,12 +114,428 @@ body {
     padding-left: 10%;
     padding-top: 40%;
     padding-right: 5%;
+    background-image: url("images/illustrations.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: bottom right;
+    background-position-x: 110%;
+    background-position-y: 120%;
   }
 
   .btn {
     border: none;
     outline: none;
     background-color: #1c1a19;
+  }
+
+  .projects {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #r_w_h {
+    margin-top: 10%;
+    padding-bottom: 5%;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+  }
+
+  #m {
+    padding-top: 5%;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    /* or 138% */
+
+    display: flex;
+    align-items: center;
+  }
+
+  #description {
+    padding-top: 5%;
+    margin-right: 10%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+  }
+
+  .box {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  #apps li {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    padding: 2%;
+    border: 1px solid #091e42;
+    margin: 10px;
+  }
+
+  #btn_1 {
+    background-color: #f55800;
+    padding: 2%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+
+    /* identical to box height, or 141% */
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #abt_mslf {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+
+    /* or 122% */
+
+    letter-spacing: 0.37px;
+
+    /* Theme 3 / Primary 1 */
+
+    color: #ff6b00;
+    margin: 10%;
+  }
+
+  #abt {
+    margin: 10%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* or 150% */
+
+    /* Neutrals/N20 */
+
+    color: #f4f5f7;
+  }
+
+  #btn_2 {
+    background-color: #f55800;
+    padding: 2%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+
+    /* identical to box height, or 141% */
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 10%;
+  }
+
+  .about_myself {
+    background-image: url("images/Frame.png");
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding-bottom: 30%;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20%;
+  }
+
+  .headr {
+    padding: 10%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150%;
+    height: 10%;
+  }
+
+  h4 {
+    font-family: "InaiMathi", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+    padding: 10%;
+  }
+
+  #listsx {
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  hr {
+    width: 80%;
+    margin: 10%;
+    position: center;
+  }
+
+  .face {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tilted_square {
+    margin: 5%;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ff6b00;
+    transform: rotate(45deg);
+    display: inline-block;
+  }
+
+  .titles-skill {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+
+    /* or 138% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .boxp {
+    margin: 5%;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ff6b00;
+    display: inline-block;
+  }
+
+  .dot {
+    margin-right: 3%;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ff6b00;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  #name {
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5%;
+  }
+
+  #email {
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5%;
+    margin-bottom: 10%;
+  }
+
+  #para {
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 10%;
+    font-style: italic;
+    background: #fbf8f7;
+    margin-bottom: 10%;
+  }
+
+  #button1 {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    gap: 10px;
+    border: none;
+    background: #ff6b00;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+
+  .btn-3 {
+    background-color: white;
+    border: none;
+    outline: none;
+  }
+
+  /* project sample design */
+  .ex1 {
+    background:
+      linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0.103) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
+      url("images/sada.png");
+    background-size: cover;
+    background-position: center;
+    padding: 21% 3%;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    height: 386px;
+    width: 327px;
+  }
+
+  .header-2 {
+    color: #fff;
+    font-family: "Crete Round", serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 3%;
+  }
+
+  .para-2 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .btn-5 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #ff6b00;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    justify-content: center;
+    border: none;
+  }
+
+  #texts-1 {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  #headerrr {
+    padding: 2% 3%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+
+    /* or 138% */
+
+    text-align: center;
+
+    /* Neutrals/N800 */
+
+    color: #172b4d;
+  }
+
+  .apps-1 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .i {
+    font-family: "Inter", sans-serif;
+    background-color: rgba(200, 200, 200, 0.445);
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    margin: 15px 5px;
+    padding: 10px;
+  }
+
+  .j {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .abt_list {
+    display: flex;
   }
 }
 
@@ -200,12 +608,14 @@ body {
 
   .body-2 {
     padding-top: 10%;
+    padding-bottom: 10%;
     width: 50%;
     margin-left: 2%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-start;
+    background-image: none;
   }
 
   .txt {
