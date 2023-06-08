@@ -2,9 +2,7 @@
 
 
 <div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>My First Portfolio</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -52,9 +50,9 @@ CSS
 
 A simple webpage with contact info and a breif description
 
-- **[Button_animation]**
-- **[links]**
-- **[Design]**
+- **Button_animation**
+- **links**
+- **Design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,8 +111,8 @@ Right click the html file and select the option "Open with live server";
 
 I will add javascript for user interface and database connection
 
-- [ ] **[User_interface]**
-- [ ] **[Database_connection]**
+- [ ] **User_interface**
+- [ ] **Database_connection**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
