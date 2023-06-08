@@ -538,6 +538,81 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .btn:hover {
+    border-color: orange;
+    background-color: #fff5e1;
+    text-emphasis-color: orange;
+  }
+
+  .btn:active {
+    background-color: orange;
+  }
+
+  .btn:disabled {
+    background-color: #f4f1f0;
+    cursor: not-allowed;
+  }
+
+  .btn-3:hover {
+    border-color: orange;
+    background-color: #fff5e1;
+    text-emphasis-color: orange;
+  }
+
+  .btn-3:active {
+    background-color: orange;
+  }
+
+  .btn-3:disabled {
+    background-color: #f4f1f0;
+    cursor: not-allowed;
+  }
+
+  .btn-5:hover {
+    border-color: orange;
+    background-color: #fff5e1;
+    text-emphasis-color: orange;
+  }
+
+  .btn-5:active {
+    background-color: orange;
+  }
+
+  .btn-5:disabled {
+    background-color: #f4f1f0;
+    cursor: not-allowed;
+  }
+
+  .btn_2:hover {
+    border-color: orange;
+    background-color: #fff5e1;
+    text-emphasis-color: orange;
+  }
+
+  .btn_2:active {
+    background-color: orange;
+  }
+
+  .btn_2:disabled {
+    background-color: #f4f1f0;
+    cursor: not-allowed;
+  }
+
+  #button1:hover {
+    border-color: orange;
+    background-color: #fff5e1;
+    text-emphasis-color: orange;
+  }
+
+  #button1:active {
+    background-color: orange;
+  }
+
+  #button1:disabled {
+    background-color: #f4f1f0;
+    cursor: not-allowed;
+  }
 }
 
 @media (min-width: 765px) {
