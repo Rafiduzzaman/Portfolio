@@ -199,8 +199,6 @@ body {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-
-    /* identical to box height, or 141% */
     color: white;
     display: flex;
     align-items: center;
@@ -216,13 +214,7 @@ body {
     font-weight: 400;
     font-size: 72px;
     line-height: 88px;
-
-    /* or 122% */
-
     letter-spacing: 0.37px;
-
-    /* Theme 3 / Primary 1 */
-
     color: #ff6b00;
     margin: 10%;
   }
@@ -234,11 +226,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-
-    /* or 150% */
-
-    /* Neutrals/N20 */
-
     color: #f4f5f7;
   }
 
@@ -250,8 +237,6 @@ body {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-
-    /* identical to box height, or 141% */
     color: white;
     display: flex;
     align-items: center;
@@ -278,12 +263,11 @@ body {
   }
 
   .headr {
-    padding: 10%;
+    padding: 10px;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 150%;
-    height: 10%;
   }
 
   h4 {
@@ -321,7 +305,7 @@ body {
   }
 
   .tilted_square {
-    margin: 5%;
+    margin: 10px;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #ff6b00;
@@ -337,22 +321,21 @@ body {
   }
 
   #text {
+    display: flex;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-
-    /* or 138% */
-
-    display: flex;
     align-items: center;
     text-align: center;
     color: #fff;
+    justify-content: center;
   }
 
   .boxp {
-    margin: 5%;
+    margin: 10px;
+    padding: -5%;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #ff6b00;
@@ -360,7 +343,7 @@ body {
   }
 
   .dot {
-    margin-right: 3%;
+    margin: 10px;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #ff6b00;
@@ -433,21 +416,19 @@ body {
 
   /* project sample design */
   .ex1 {
-    background:
-      linear-gradient(
-        180.45deg,
-        rgba(38, 38, 38, 0.103) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%
-      ),
-      url("images/sada.png");
+    display: flex;
+    background: url(images/sada.png);
     background-size: cover;
     background-position: center;
-    padding: 21% 3%;
+    padding-top: 62px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 62px;
     position: relative;
-    margin-top: 10%;
     margin-bottom: 2%;
-    height: 50%;
     width: 327px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .header-2 {
@@ -495,13 +476,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-
-    /* or 138% */
-
     text-align: center;
-
-    /* Neutrals/N800 */
-
     color: #172b4d;
   }
 
@@ -509,8 +484,9 @@ body {
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    padding-right: 30px;
   }
 
   .i {
@@ -524,6 +500,7 @@ body {
   }
 
   .j {
+    padding: 10px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
