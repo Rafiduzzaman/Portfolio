@@ -534,8 +534,8 @@ body {
     color: #fff;
   }
 
-  .abt_list {
-    display: flex;
+  .abt_list {display: flex;
+    flex-direction: column;
   }
 }
 
