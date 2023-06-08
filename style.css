@@ -130,10 +130,10 @@ body {
 
   .projects {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: grid;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
   }
 
   #r_w_h {
@@ -445,8 +445,8 @@ body {
     padding: 21% 3%;
     position: relative;
     margin-top: 10%;
-    margin-bottom: 8%;
-    height: 386px;
+    margin-bottom: 2%;
+    height: 50%;
     width: 327px;
   }
 
