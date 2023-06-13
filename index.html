@@ -259,11 +259,25 @@
   <section class="contact">
     <h1 id="headerrr">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </h1>
-    <input type="text" placeholder="Full Name" id="name">
-    <input type="text" placeholder="Email Address" id="email">
-    <input type="text" placeholder="Write me something..." id="para">
-    <button id="button1">Get in touch</button>
-    <hr>
+    <form action="https://formspree.io/f/mqkorarr" method="post">
+      <ul>
+        <li>
+          <label for="name"></label>
+          <input maxlength="30" type="text" placeholder="Full Name" id="name" name="user_name" required>
+        </li>
+        <li>
+          <label for="email"></label>
+          <input type="email" placeholder="Email Address" id="email" name="user_email" required>
+        </li>
+        <li>
+          <label for="msg"></label>
+          <textarea maxlength="500" rows="5" columns="20" placeholder="Write me something..." id="para" name="user_msg" required></textarea>
+        </li>
+      </ul>
+
+      
+      <button id="button1">Get in touch</button>
+    </form>
     <ul id="sm">
       <li><button class="btn-3"><a href="https://github.com/Rdzaman20000"><img src="images/12.jpg"
               alt="" /></a></button>
