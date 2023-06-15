@@ -391,6 +391,7 @@ body {
   }
 
   #button1 {
+    width: 25 vw;
     display: flex;
     flex-direction: row;
     padding: 12px;
@@ -406,6 +407,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #fff;
+    justify-content: center;
+    align-self: center;
   }
 
   .btn-3 {
@@ -458,10 +461,20 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 48px;
     justify-content: center;
     border: none;
+    align-self: center;
+  }
+
+  form {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-content: space-around;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
   #texts-1 {
