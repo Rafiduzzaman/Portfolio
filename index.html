@@ -28,7 +28,6 @@
       <section class="menu"><img src="images/Union.png" alt="" /></section>
     </nav>
   </header>
-
   <!-- Main Content -->
   <section id="back">
     <section class="body-2">
@@ -61,8 +60,6 @@
       </ul>
     </section>
   </section>
-
-
   <!-- MY projects -->
   <section class="projects">
     <div id="title2">
@@ -88,7 +85,6 @@
         <button id="btn_1">See Project</button>
       </div>
     </div>
-
     <!-- Project samples -->
     <section id="mob_ver">
       <section class="ex1">
@@ -264,7 +260,6 @@
     </section>
     <hr id="line">
   </section>
-
   <section class="skills">
     <ul id="main_ul">
       <!-- div class tilted square is necessary for the custom bullet -->
@@ -309,16 +304,45 @@
 
     </ul>
   </section>
-
   <!-- Contact  -->
   <section class="contact">
-    <section id="text3"><h1 id="headerrr">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-    </h1></section>
-    
-    <input type="text" placeholder="Full Name" id="name">
-    <input type="text" placeholder="Email Address" id="email">
-    <input type="text" placeholder="Write me something..." id="para">
-    <button id="button1">Get in touch</button>
+    <section class="part1">
+      <section class="text4">
+        <h1 id="headerrr">I'm always interested in hearing about new projects, so if you'd like to chat please get in
+          touch.
+        </h1>
+      </section>
+      <section id="form1">
+        <form action="https://formspree.io/f/mbjenklg" method="post">
+          <ul>
+            <li>
+              <label for="name"></label>
+              <input type="text" placeholder="Fullname" id="name" name="user_name" required>
+            </li>
+            <li class="name-fields">
+              <div class="name-field">
+                <label for="first-name"></label>
+                <input type="text" placeholder="First Name" id="first-name" name="user_first_name" required>
+              </div>
+              <div class="name-field">
+                <label for="last-name"></label>
+                <input type="text" placeholder="Last Name" id="last-name" name="user_last_name" required>
+              </div>
+            </li>
+            <li>
+              <label for="email"></label>
+              <input type="email" placeholder="Email Address" id="email" name="user_email" required>
+            </li>
+            <li>
+              <label for="msg"></label>
+              <textarea maxlength="500" rows="5" columns="20" placeholder="Write me something..." id="para"
+                name="user_msg" required></textarea>
+            </li>
+          </ul>
+          <button type="submit" id="button1">Get in touch</button>
+        </form>
+      </section>
+    </section>
     <hr>
     <ul id="sm1">
       <li><button class="btn-3"><a href="https://github.com/Rdzaman20000"><img src="images/12.jpg"

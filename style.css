@@ -144,6 +144,7 @@ body {
     font-size: 40px;
     line-height: 52px;
   }
+
   #works {
     display: flex;
     margin-bottom: 0%;
@@ -373,6 +374,7 @@ body {
     border-left: none;
     border-right: none;
     padding: 5%;
+    margin-left: 20px;
   }
 
   #email {
@@ -382,6 +384,7 @@ body {
     border-right: none;
     padding: 5%;
     margin-bottom: 10%;
+    margin-left: 20px;
   }
 
   #para {
@@ -390,15 +393,14 @@ body {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    padding: 10%;
+    padding: 10px 10px;
     font-style: italic;
     background: #fbf8f7;
-    margin-bottom: 10%;
+    margin: 10px 40px;
   }
 
   #button1 {
     display: flex;
-    flex-direction: row;
     padding: 12px;
     gap: 10px;
     border: none;
@@ -408,10 +410,11 @@ body {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
     color: #fff;
+    width: fit-content;
+    margin: 10px 40px;
   }
 
   .btn-3 {
@@ -524,10 +527,9 @@ body {
 
   .btn:hover {
     border-color: orange;
-    background-color: #fff5e1;
+    background-color: orange;
     text-emphasis-color: orange;
     color: orange;
-    border-color: orange;
   }
 
   .btn:active {
@@ -540,8 +542,6 @@ body {
   }
 
   .btn-3:hover {
-    border-color: orange;
-    background-color: #fff5e1;
     text-emphasis-color: orange;
     color: orange;
     border-color: orange;
@@ -558,10 +558,8 @@ body {
 
   .btn-5:hover {
     border-color: orange;
-    background-color: #fff5e1;
     text-emphasis-color: orange;
     color: orange;
-    border-color: orange;
   }
 
   .btn-5:active {
@@ -575,7 +573,7 @@ body {
 
   #btn_2:hover {
     border-color: orange;
-    background-color: #fff5e1;
+    background-color: orange;
     text-emphasis-color: orange;
     color: orange;
   }
@@ -588,12 +586,12 @@ body {
     background-color: #f4f1f0;
     cursor: not-allowed;
   }
+
   #btn_1:hover {
     border-color: orange;
     background-color: #fff5e1;
     text-emphasis-color: orange;
     color: orange;
-    border-color: orange;
   }
 
   #btn_1:active {
@@ -610,7 +608,6 @@ body {
     background-color: #fff5e1;
     text-emphasis-color: orange;
     color: orange;
-    border-color: orange;
   }
 
   #button1:active {
@@ -621,8 +618,35 @@ body {
     background-color: #f4f1f0;
     cursor: not-allowed;
   }
+
   #desk_ver {
     display: none;
+  }
+
+  #first-name {
+    display: none;
+  }
+
+  #last-name {
+    display: none;
+  }
+
+  #sm1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 30%;
+    align-items: center;
+    padding-right: 0%;
+    margin-right: 0%;
+  }
+
+  .text4 {
+    justify-content: center;
+    margin: 0% 50px;
   }
 }
 
@@ -639,6 +663,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   /* menu bar disappear */
   .menu {
     display: none;
@@ -672,6 +697,12 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  #works img {
+    width: 684px;
+    height: 448px;
+  }
+
   #nbc li img {
     background-color: #3e3c3c;
   }
@@ -691,8 +722,6 @@ body {
     height: 100%;
     width: 25%;
     size: 100%;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -704,7 +733,6 @@ body {
   .body-2 {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 40%;
     align-items: center;
     padding-top: 10vh;
     margin-left: 2vh;
@@ -713,6 +741,7 @@ body {
     width: 50%;
     background-image: none;
   }
+
   #sm {
     display: flex;
     flex-direction: column;
@@ -730,42 +759,46 @@ body {
     padding-left: 5vh;
     margin-left: 0%;
   }
+
   .h1 p {
     padding-bottom: 0%;
     margin-bottom: 0%;
-    font-family: "Crete Round";
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
     color: #f55800;
   }
+
   .h2 {
     padding-top: 0%;
     margin-top: 0%;
     padding-bottom: 0%;
     margin-bottom: 0%;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
     display: flex;
     align-items: center;
-
-    color: #ffffff;
+    color: #fff;
   }
+
   .h2 p {
     padding-top: 0%;
     margin-top: 0%;
     padding-bottom: 0%;
     margin-bottom: 0%;
   }
+
   .h3 {
     width: 80%;
   }
+
   .h3 p {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -778,12 +811,14 @@ body {
     margin: 0;
     padding: 0;
   }
+
   #title2 {
     display: flex;
     width: 80%;
     align-items: center;
     margin-top: 5vh;
   }
+
   #title2 h1 {
     width: 38%;
     padding-right: 0%;
@@ -792,6 +827,7 @@ body {
     margin-top: 20px;
     padding-bottom: 0%;
   }
+
   #title2 hr {
     flex-grow: 1;
     padding-left: 0%;
@@ -802,6 +838,7 @@ body {
     padding-bottom: 0%;
     border-top: 1px solid black;
   }
+
   #works {
     display: flex;
     width: 85%;
@@ -811,55 +848,59 @@ body {
     padding-bottom: 0%;
     margin-top: 0%;
   }
-  #works img {
-    width: 684px;
-    height: 448px;
-  }
+
   .container {
-    margin: 0px 2vh;
+    margin: 0 2vh;
     padding: 0% 0%;
     display: flex;
     width: 150%;
     flex-direction: column;
     align-items: flex-start;
   }
+
   #m {
     margin-top: 0%;
     margin-bottom: 0%;
     padding: 0%;
-    font-family: "Crete Round";
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
   }
+
   #description {
     width: 100%;
     margin-top: 25px;
     padding: 0% 0%;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #091e42;
   }
+
   .box {
     padding: 0% 0%;
     margin: 0% 0%;
   }
+
   .apps {
     padding: 0% 0%;
     margin: 0% 0%;
   }
+
   #btn_1 {
     border: none;
     margin: 10px 10px;
   }
+
   #mob_ver {
     display: none;
   }
+
   .ex1 {
     display: flex;
     background: url(images/sada.png);
@@ -877,6 +918,7 @@ body {
     margin-right: 2%;
     margin-top: 2%;
   }
+
   .ex2 {
     display: flex;
     background: url(images/exc.png);
@@ -894,6 +936,7 @@ body {
     margin-right: 20px;
     margin-top: 20px;
   }
+
   .ex3 {
     display: flex;
     background: url(images/sada1.png);
@@ -911,6 +954,7 @@ body {
     margin-right: 20px;
     margin-top: 20px;
   }
+
   .ex4 {
     display: flex;
     background: url(images/sada2.png);
@@ -929,9 +973,11 @@ body {
     margin-top: 20px;
     justify-content: flex-end;
   }
+
   #r1 {
     display: flex;
   }
+
   #desk_ver {
     width: 85%;
     display: flex;
@@ -940,6 +986,7 @@ body {
     align-items: center;
     margin-bottom: 10vh;
   }
+
   .about_myself {
     background-image: url(images/abt.png);
     background-repeat: no-repeat;
@@ -953,26 +1000,31 @@ body {
     margin-bottom: 0%;
     padding-bottom: 0%;
   }
+
   #abt_mslf {
     margin: 0%;
     margin-bottom: 20px;
     padding: 0%;
   }
+
   #abt {
     margin: 0%;
     padding: 0%;
     width: 70%;
     margin-bottom: 30px;
   }
+
   #btn_2 {
     margin: 0%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .text_2 {
     width: 50%;
     margin: 20vh;
   }
+
   #main_ul {
     display: flex;
     width: 100%;
@@ -985,11 +1037,14 @@ body {
     padding: 0% 0% 100px 0%;
     margin: 0% 0% 0% 0%;
   }
+
   .sklz {
     display: flex;
-    flex-direction: column;padding: 0%;
+    flex-direction: column;
+    padding: 0%;
     margin: 0%;
   }
+
   .sklz ul {
     display: flex;
     width: 100%;
@@ -998,27 +1053,105 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .j {
     padding: 10px 0%;
     margin: 0% 0%;
   }
-  #text{
+
+  #text {
     margin: 0%;
     padding: 0% 0% 20px 0%;
   }
+
   #sm1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 5%;
+    margin-bottom: 0%;
     width: 200px;
     height: 40px;
-    margin-bottom: 30%;
+    margin-top: 0%;
+    padding-top: 0%;
     align-items: center;
     padding-right: 0%;
     margin-right: 0%;
-}
-  .contact{
+  }
+
+  .contact {
     display: flex;
+  }
+
+  .part1 {
+    display: flex;
+  }
+
+  .text4 {
+    width: 30%;
+    margin: 10vh 0 0 20vh;
+  }
+
+  #headerrr {
+    text-align: left;
+  }
+
+  #form1 {
+    display: grid;
+    width: 50%;
+    margin: 10vh 0 0 10vh;
+  }
+
+  #name {
+    display: none;
+  }
+
+  .name-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .name-field {
+    flex-basis: calc(50% - 10px); /* Adjust as needed */
+  }
+
+  .name-field input {
+    width: 100%;
+  }
+
+  #first-name {
+    display: block;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5%;
+    padding-left: 0%;
+    margin-left: 0%;
+  }
+
+  #last-name {
+    display: block;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5%;
+  }
+
+  #email {
+    width: 92%;
+    padding: 12px;
+    margin: 0% 0%;
+  }
+
+  #para {
+    padding: 15px 0 0 15px;
+    width: 92%;
+    margin: 0% 0%;
+  }
+
+  #button1 {
+    margin: 0% 5vh;
   }
 }
