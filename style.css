@@ -79,7 +79,8 @@ body {
     line-height: 64px;
     letter-spacing: 0.37px;
     color: #ff6b00;
-    padding-bottom: 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
   }
 
   .h2 {
@@ -91,7 +92,8 @@ body {
     display: flex;
     align-items: center;
     color: #fff5e1;
-    padding-bottom: 5%;
+    padding-top: 0%;
+    margin-top: 0%;
   }
 
   .h3 {
@@ -99,11 +101,8 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-
-    /* text-align: justify; */
     line-height: 24px;
     color: #fff;
-    padding-bottom: 5%;
   }
 
   /* body content texts padding margin design */
@@ -123,9 +122,9 @@ body {
   }
 
   .btn {
-    border: none;
     outline: none;
     background-color: #1c1a19;
+    border: 2px solid transparent;
   }
 
   .projects {
@@ -146,6 +145,14 @@ body {
     line-height: 52px;
   }
 
+  #works {
+    display: flex;
+    margin-bottom: 0%;
+    padding: 0% 0%;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -160,9 +167,6 @@ body {
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
-
-    /* or 138% */
-
     display: flex;
     align-items: center;
   }
@@ -206,6 +210,7 @@ body {
     letter-spacing: 0.03em;
     margin-top: 10%;
     margin-bottom: 10%;
+    border: 2px solid transparent;
   }
 
   #abt_mslf {
@@ -243,6 +248,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     margin: 10%;
+    border: 2px solid transparent;
   }
 
   .about_myself {
@@ -305,7 +311,7 @@ body {
   }
 
   .tilted_square {
-    margin: 10px;
+    margin-right: 20px;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #ff6b00;
@@ -330,11 +336,11 @@ body {
     align-items: center;
     text-align: center;
     color: #fff;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .boxp {
-    margin: 10px;
+    margin-right: 15px;
     padding: -5%;
     height: 1.5rem;
     width: 1.5rem;
@@ -343,7 +349,7 @@ body {
   }
 
   .dot {
-    margin: 10px;
+    margin-right: 15px;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #ff6b00;
@@ -367,6 +373,7 @@ body {
     border-left: none;
     border-right: none;
     padding: 5%;
+    margin-left: 20px;
   }
 
   #email {
@@ -376,6 +383,7 @@ body {
     border-right: none;
     padding: 5%;
     margin-bottom: 10%;
+    margin-left: 20px;
   }
 
   #para {
@@ -384,37 +392,34 @@ body {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    padding: 10%;
+    padding: 10px 10px;
     font-style: italic;
     background: #fbf8f7;
-    margin-bottom: 10%;
+    margin: 10px 40px;
   }
 
   #button1 {
-    width: 25 vw;
     display: flex;
-    flex-direction: row;
     padding: 12px;
     gap: 10px;
-    border: none;
     background: #ff6b00;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
     color: #fff;
-    justify-content: center;
-    align-self: center;
+    width: fit-content;
+    margin: 10px 40px;
+    border: 2px solid transparent;
   }
 
   .btn-3 {
     background-color: white;
-    border: none;
     outline: none;
+    border: 2px solid transparent;
   }
 
   /* project sample design */
@@ -461,20 +466,11 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 80%;
+    width: 100%;
     height: 48px;
     justify-content: center;
     border: none;
-    align-self: center;
-  }
-
-  form {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    align-content: space-around;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    border: 2px solid transparent;
   }
 
   #texts-1 {
@@ -530,89 +526,154 @@ body {
   }
 
   .btn:hover {
-    border-color: orange;
+    border-color: #f55800;
     background-color: #fff5e1;
     text-emphasis-color: orange;
+    color: #f55800;
   }
 
   .btn:active {
-    background-color: orange;
+    background-color: #f55800;
+    color: #f4f1f0;
   }
 
   .btn:disabled {
     background-color: #f4f1f0;
     cursor: not-allowed;
+    color: #5b5957;
   }
 
   .btn-3:hover {
-    border-color: orange;
     background-color: #fff5e1;
     text-emphasis-color: orange;
+    color: #f55800;
+    border-color: #f55800;
   }
 
   .btn-3:active {
-    background-color: orange;
+    background-color: #f55800;
+    color: #f4f1f0;
   }
 
   .btn-3:disabled {
     background-color: #f4f1f0;
     cursor: not-allowed;
+    color: #5b5957;
   }
 
   .btn-5:hover {
-    border-color: orange;
-    background-color: #fff5e1;
+    border-color: #f55800;
     text-emphasis-color: orange;
+    color: #f55800;
+    background-color: #fff5e1;
   }
 
   .btn-5:active {
-    background-color: orange;
+    background-color: #f55800;
+    color: #f4f1f0;
   }
 
   .btn-5:disabled {
     background-color: #f4f1f0;
     cursor: not-allowed;
+    color: #5b5957;
   }
 
-  .btn_2:hover {
-    border-color: orange;
+  #btn_2:hover {
+    border-color: #f55800;
     background-color: #fff5e1;
     text-emphasis-color: orange;
+    color: #f55800;
   }
 
-  .btn_2:active {
-    background-color: orange;
+  #btn_2:active {
+    background-color: #f55800;
+    color: #f4f1f0;
   }
 
-  .btn_2:disabled {
+  #btn_2:disabled {
     background-color: #f4f1f0;
     cursor: not-allowed;
+    color: #5b5957;
+  }
+
+  #btn_1:hover {
+    border-color: #f55800;
+    background-color: #fff5e1;
+    text-emphasis-color: orange;
+    color: #f55800;
+  }
+
+  #btn_1:active {
+    background-color: #f55800;
+    color: #f4f1f0;
+  }
+
+  #btn_1:disabled {
+    background-color: #f4f1f0;
+    cursor: not-allowed;
+    color: #5b5957;
   }
 
   #button1:hover {
-    border-color: orange;
+    border-color: #f55800;
     background-color: #fff5e1;
     text-emphasis-color: orange;
+    color: #f55800;
   }
 
   #button1:active {
-    background-color: orange;
+    background-color: #f55800;
+    color: #f4f1f0;
   }
 
   #button1:disabled {
     background-color: #f4f1f0;
     cursor: not-allowed;
+    color: #5b5957;
+  }
+
+  #desk_ver {
+    display: none;
+  }
+
+  #first-name {
+    display: none;
+  }
+
+  #last-name {
+    display: none;
+  }
+
+  #sm1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 30%;
+    align-items: center;
+    padding-right: 0%;
+    margin-right: 0%;
+  }
+
+  .text4 {
+    justify-content: center;
+    margin: 0% 50px;
   }
 }
 
 @media (min-width: 765px) {
+  body
   /* Background color */
-  body {
+  #back {
     background-image: url("images/Illustration-header.png");
     background-repeat: no-repeat;
     background-origin: content-box;
-    background-position: 100% -10%;
-    background-size: 35%;
+    background-position: 100% -0.5%;
+    background-attachment: scroll;
+    background-size: 500px;
     display: flex;
     flex-direction: column;
   }
@@ -637,6 +698,7 @@ body {
     display: flex;
     width: 20%;
     padding-right: 10%;
+    align-self: center;
   }
 
   #nbc {
@@ -650,6 +712,25 @@ body {
     align-items: center;
   }
 
+  .h3 {
+    width: 80%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  #works img {
+    width: 684px;
+    height: 448px;
+  }
+
+  #nbc li img {
+    background-color: #3e3c3c;
+  }
+
   /* list items design */
   li {
     size: 100%;
@@ -658,89 +739,91 @@ body {
 
   /* Logo design */
   .logo {
-    color: #f4f5f7;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
     display: flex;
     height: 100%;
     width: 25%;
     size: 100%;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     justify-content: center;
     align-items: center;
+    margin-left: 2vh;
   }
 
   .body-2 {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    width: 50%;
-    margin-left: 2%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    padding-top: 10vh;
+    margin-left: 2vh;
+    padding-left: 0%;
+    padding-bottom: 18vh;
+    width: 50%;
     background-image: none;
   }
 
-  .txt {
+  #sm {
     display: flex;
-    width: 75%;
     flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5%;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 30%;
     align-items: flex-start;
-    justify-content: space-around;
+    padding-right: 0%;
+    margin-right: 0%;
   }
 
-  .h1 {
-    font-family: "Crete Round", serif;
+  .txt {
+    padding-left: 5vh;
+    margin-left: 0%;
+  }
+
+  .h1 p {
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-
-    /* or 113% */
-
     color: #f55800;
   }
 
   .h2 {
-    padding-top: 3%;
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 44px;
-
-    /* or 138% */
-
     display: flex;
     align-items: center;
     color: #fff;
   }
 
-  .h3 {
-    padding-top: 3%;
+  .h2 p {
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+  }
+
+  .h3 p {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-
-    /* or 160% */
-
-    /* Neutrals/N20 */
-
     color: #f4f5f7;
-  }
-
-  #sm {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
 
   ul {
@@ -749,14 +832,376 @@ body {
     padding: 0;
   }
 
-  img {
-    background-color: #3c3a39;
-    border: 0;
+  #title2 {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-top: 5vh;
   }
 
-  .btn {
+  #title2 h1 {
+    width: 38%;
+    padding-right: 0%;
+    margin-right: 0%;
+    align-self: center;
+    margin-top: 20px;
+    padding-bottom: 0%;
+  }
+
+  .contact hr {
+    width: 100%;
+    padding: 0% 0%;
+    margin: 0% 0% 0% 0%;
+  }
+
+  #title2 hr {
+    flex-grow: 1;
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    align-self: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    border-top: 1px solid black;
+  }
+
+  #works {
+    display: flex;
+    width: 85%;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+  }
+
+  .container {
+    margin: 0 2vh;
+    padding: 0% 0%;
+    display: flex;
+    width: 150%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #m {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0%;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  #description {
+    width: 100%;
+    margin-top: 25px;
+    padding: 0% 0%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+  }
+
+  .box {
+    padding: 0% 0%;
+    margin: 0% 0%;
+  }
+
+  .apps {
+    padding: 0% 0%;
+    margin: 0% 0%;
+  }
+
+  #btn_1 {
     border: none;
-    outline: none;
-    background-color: #1c1a19;
+    margin: 10px 10px;
+  }
+
+  #mob_ver {
+    display: none;
+  }
+
+  .ex1 {
+    display: flex;
+    background: url(images/sada.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 62px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 62px;
+    position: relative;
+    margin-bottom: 2%;
+    width: 327px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+
+  .ex2 {
+    display: flex;
+    background: url(images/exc.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 62px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 62px;
+    position: relative;
+    margin-bottom: 2%;
+    width: 327px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .ex3 {
+    display: flex;
+    background: url(images/sada1.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 62px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 62px;
+    position: relative;
+    margin-bottom: 2%;
+    width: 327px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .ex4 {
+    display: flex;
+    background: url(images/sada2.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 62px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 62px;
+    position: relative;
+    margin-bottom: 2%;
+    width: 327px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+
+  #r1 {
+    display: flex;
+  }
+
+  #desk_ver {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+
+  .about_myself {
+    background-image: url(images/abt.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 100%;
+    background-attachment: scroll;
+    background-size: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+
+  #abt_mslf {
+    margin: 0%;
+    margin-bottom: 20px;
+    padding: 0%;
+  }
+
+  #abt {
+    margin: 0%;
+    padding: 0%;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  #btn_2 {
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .text_2 {
+    width: 50%;
+    margin: 20vh;
+  }
+
+  #main_ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .skills {
+    background-color: #262626;
+    width: 100%;
+    padding: 0% 0% 100px 0%;
+    margin: 0% 0% 0% 0%;
+  }
+
+  .sklz {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .sklz ul {
+    display: flex;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .j {
+    padding: 10px 0%;
+    margin: 0% 0%;
+  }
+
+  #text {
+    margin: 0%;
+    padding: 0% 0% 20px 0%;
+  }
+
+  #sm1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2vh;
+    width: 200px;
+    height: 40px;
+    padding-top: 0%;
+    align-items: center;
+    padding-right: 0%;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .part1 {
+    display: flex;
+    margin-bottom: 20vh;
+  }
+
+  .text4 {
+    width: 30%;
+    margin: 10vh 0 0 20vh;
+    padding-right: 0%;
+  }
+
+  #headerrr {
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+    padding-right: 0%;
+  }
+
+  #form1 {
+    display: grid;
+    width: 50%;
+    margin: 15vh 0 0 10vh;
+  }
+
+  #name {
+    display: none;
+  }
+
+  .name-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .name-field {
+    flex-basis: calc(50% - 10px); /* Adjust as needed */
+  }
+
+  .name-field input {
+    width: 100%;
+  }
+
+  #first-name {
+    display: block;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5%;
+    padding-left: 0%;
+    margin-left: 0%;
+  }
+
+  #last-name {
+    display: block;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5%;
+  }
+
+  #email {
+    width: 92%;
+    padding: 12px;
+    margin: 0% 0%;
+  }
+
+  #para {
+    padding: 15px 0 0 15px;
+    width: 92%;
+    margin: 0% 0%;
+  }
+
+  #button1 {
+    margin: 0% 5vh;
+  }
+
+  .nav_link {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
   }
 }
