@@ -247,8 +247,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 10%;
-    border: 2px solid transparent;
+    margin: 10%;   
   }
 
   .about_myself {
@@ -873,8 +872,16 @@ body {
     margin-bottom: 0%;
     padding-bottom: 0%;
     margin-top: 0%;
+    overflow: hidden; /* to prevent content from overflowing */
   }
 
+  .animation {
+    transition: transform 0.3s ease; /* smooth transition effect */
+  }
+
+  .animation:hover {
+    transform: scale(1.1); /* scale up the element */
+  }
   .container {
     margin: 0 2vh;
     padding: 0% 0%;
@@ -1044,6 +1051,15 @@ body {
     margin: 0%;
     padding-top: 10px;
     padding-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .resume_btn {
+      transition: transform 0.3s ease; /* smooth transition effect */
+  }
+    
+  .resume_btn:hover {
+      transform: scale(1.1); /* scale up the element */
   }
 
   .text_2 {
