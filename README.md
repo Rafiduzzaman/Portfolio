@@ -50,7 +50,7 @@ CSS
 
 ### Key Features <a name="key-features"></a>
 
-A simple webpage with contact info and a breif description
+A simple webpage with contact info and a breif description. And there is an online version of this webpage.
 
 - **Button_animation**
 - **links**
