@@ -12,41 +12,52 @@ body {
   background-color: #1c1a19;
   width: 100%;
 }
+ 
+
 
 @media (min-width: 365px) {
   /* Navigation Bar Contents hide for mobile */
   .nav_bar_contents {
     display: none;
   }
+  .hamburger_menu{
+    border: none;
+    outline: none;
+    background:transparent;
+  }
   /* Hamburger menu */
   .mobile_menu {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     background: #3c3a39;
     height: 100vh;
     width: 100%;
+    position: absolute;
+    z-index: 9999; /* Adjust the value as needed */
   }
   .mobile_menu a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Use the default text color */
     /* Additional styles */
   }
-  .exit{
+  .exit {
     background-color: #3c3a39;
     border: none;
     margin-left: auto;
   }
-  .mobile_menu hr{
-    color: #6F6C6B;
+  .mobile_menu hr {
+    color: #6f6c6b;
     width: 90%;
     padding: 0px 0px;
     margin: 15px 25px;
   }
-  .mobile_menu img{
+  .mobile_menu img {
     background-color: #3c3a39;
     width: 40px; /* Adjust the size as needed */
+    margin-right: 20px;
   }
- 
+
   .mobile_menu ul li {
     font-family: "Inter", sans-serif;
     font-size: 32px;
@@ -56,7 +67,7 @@ body {
     text-align: left;
     color: #fff5e1;
     padding: 0px 10px;
-    border-bottom: #6F6C6B;
+    border-bottom: #6f6c6b;
     margin-left: 20px;
   }
 
@@ -705,6 +716,9 @@ body {
 }
 
 @media (min-width: 765px) {
+  .mobile_menu {
+    display: none;
+  }
   body
   /* Background color */
   #back {
