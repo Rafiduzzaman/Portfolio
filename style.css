@@ -17,6 +17,9 @@ body {
 
 @media (min-width: 365px) {
   /* Navigation Bar Contents hide for mobile */
+  .navbar.hidden {
+    display:none;
+  }
   .nav_bar_contents {
     display: none;
   }
@@ -27,7 +30,6 @@ body {
   }
   /* Hamburger menu */
   .mobile_menu {
-    visibility: hidden;
     display: flex;
     flex-direction: column;
     background: #3c3a39;
@@ -36,6 +38,11 @@ body {
     position: absolute;
     z-index: 9999; /* Adjust the value as needed */
   }
+
+  .mobile_menu.hidden {
+    display:none;
+  }
+
   .mobile_menu a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Use the default text color */

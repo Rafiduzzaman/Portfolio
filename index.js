@@ -1,6 +1,9 @@
 const menuButton = document.querySelector('.menu');
+const navbar = document.querySelector('.navbar');
+const hamburgerMenuBtn = document.querySelector('.hamburger_menu');
 const mobileMenu = document.querySelector('.mobile_menu');
 
-menuButton.addEventListener('click', function() {
-  mobileMenu.classList.toggle('show');
+hamburgerMenuBtn.addEventListener('click', function() {
+  navbar.classList.toggle('hidden');
+  mobileMenu.classList.toggle('hidden');
 });
