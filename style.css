@@ -12,22 +12,23 @@ body {
   background-color: #1c1a19;
   width: 100%;
 }
- 
-
 
 @media (min-width: 365px) {
   /* Navigation Bar Contents hide for mobile */
   .navbar.hidden {
-    display:none;
+    display: none;
   }
+
   .nav_bar_contents {
     display: none;
   }
-  .hamburger_menu{
+
+  .hamburger_menu {
     border: none;
     outline: none;
-    background:transparent;
+    background: transparent;
   }
+
   /* Hamburger menu */
   .mobile_menu {
     display: flex;
@@ -36,32 +37,39 @@ body {
     height: 100vh;
     width: 100%;
     position: absolute;
-    z-index: 9999; /* Adjust the value as needed */
+    z-index: 9999;
+    /* Adjust the value as needed */
   }
 
   .mobile_menu.hidden {
-    display:none;
+    display: none;
   }
 
   .mobile_menu a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Use the default text color */
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Use the default text color */
     /* Additional styles */
   }
+
   .exit {
     background-color: #3c3a39;
     border: none;
     margin-left: auto;
   }
+
   .mobile_menu hr {
     color: #6f6c6b;
     width: 90%;
     padding: 0px 0px;
     margin: 15px 25px;
   }
+
   .mobile_menu img {
     background-color: #3c3a39;
-    width: 40px; /* Adjust the size as needed */
+    width: 40px;
+    /* Adjust the size as needed */
     margin-right: 20px;
   }
 
@@ -726,7 +734,9 @@ body {
   .mobile_menu {
     display: none;
   }
+
   body
+
   /* Background color */
   #back {
     background-image: url("images/Illustration-header.png");
@@ -934,15 +944,18 @@ body {
     margin-bottom: 0%;
     padding-bottom: 0%;
     margin-top: 0%;
-    overflow: hidden; /* to prevent content from overflowing */
+    overflow: hidden;
+    /* to prevent content from overflowing */
   }
 
   .animation {
-    transition: transform 0.3s ease; /* smooth transition effect */
+    transition: transform 0.3s ease;
+    /* smooth transition effect */
   }
 
   .animation:hover {
-    transform: scale(1.1); /* scale up the element */
+    transform: scale(1.1);
+    /* scale up the element */
   }
 
   .container {
@@ -1118,11 +1131,13 @@ body {
   }
 
   .resume_btn {
-    transition: transform 0.3s ease; /* smooth transition effect */
+    transition: transform 0.3s ease;
+    /* smooth transition effect */
   }
 
   .resume_btn:hover {
-    transform: scale(1.1); /* scale up the element */
+    transform: scale(1.1);
+    /* scale up the element */
   }
 
   .text_2 {
@@ -1226,7 +1241,8 @@ body {
   }
 
   .name-field {
-    flex-basis: calc(50% - 10px); /* Adjust as needed */
+    flex-basis: calc(50% - 10px);
+    /* Adjust as needed */
   }
 
   .name-field input {
