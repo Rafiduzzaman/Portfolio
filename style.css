@@ -38,6 +38,7 @@ body {
     width: 100%;
     position: absolute;
     z-index: 9999;
+
     /* Adjust the value as needed */
   }
 
@@ -47,9 +48,12 @@ body {
 
   .mobile_menu a {
     text-decoration: none;
+
     /* Remove underline */
     color: inherit;
+
     /* Use the default text color */
+
     /* Additional styles */
   }
 
@@ -59,16 +63,28 @@ body {
     margin-left: auto;
   }
 
+  hr {
+    width: 80%;
+    margin: 10%;
+    position: center;
+  }
+
   .mobile_menu hr {
     color: #6f6c6b;
     width: 90%;
-    padding: 0px 0px;
+    padding: 0 0;
     margin: 15px 25px;
+  }
+
+  img {
+    background-color: #1c1a19;
+    border: 0;
   }
 
   .mobile_menu img {
     background-color: #3c3a39;
     width: 40px;
+
     /* Adjust the size as needed */
     margin-right: 20px;
   }
@@ -78,10 +94,10 @@ body {
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     color: #fff5e1;
-    padding: 0px 10px;
+    padding: 0 10px;
     border-bottom: #6f6c6b;
     margin-left: 20px;
   }
@@ -130,11 +146,6 @@ body {
     width: 200px;
     height: 40px;
     margin-bottom: 30%;
-  }
-
-  img {
-    background-color: #1c1a19;
-    border: 0;
   }
 
   /* header texts design */
@@ -362,12 +373,6 @@ body {
     align-items: center;
     text-align: center;
     color: #fff;
-  }
-
-  hr {
-    width: 80%;
-    margin: 10%;
-    position: center;
   }
 
   .face {
@@ -736,7 +741,6 @@ body {
   }
 
   body
-
   /* Background color */
   #back {
     background-image: url("images/Illustration-header.png");
@@ -945,16 +949,19 @@ body {
     padding-bottom: 0%;
     margin-top: 0%;
     overflow: hidden;
+
     /* to prevent content from overflowing */
   }
 
   .animation {
     transition: transform 0.3s ease;
+
     /* smooth transition effect */
   }
 
   .animation:hover {
     transform: scale(1.1);
+
     /* scale up the element */
   }
 
@@ -1132,11 +1139,13 @@ body {
 
   .resume_btn {
     transition: transform 0.3s ease;
+
     /* smooth transition effect */
   }
 
   .resume_btn:hover {
     transform: scale(1.1);
+
     /* scale up the element */
   }
 
@@ -1242,6 +1251,7 @@ body {
 
   .name-field {
     flex-basis: calc(50% - 10px);
+
     /* Adjust as needed */
   }
 
