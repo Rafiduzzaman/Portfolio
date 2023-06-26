@@ -247,7 +247,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 10%;   
+    margin: 10%;
   }
 
   .about_myself {
@@ -882,6 +882,7 @@ body {
   .animation:hover {
     transform: scale(1.1); /* scale up the element */
   }
+
   .container {
     margin: 0 2vh;
     padding: 0% 0%;
@@ -1055,11 +1056,11 @@ body {
   }
 
   .resume_btn {
-      transition: transform 0.3s ease; /* smooth transition effect */
+    transition: transform 0.3s ease; /* smooth transition effect */
   }
-    
+
   .resume_btn:hover {
-      transform: scale(1.1); /* scale up the element */
+    transform: scale(1.1); /* scale up the element */
   }
 
   .text_2 {
