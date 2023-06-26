@@ -18,6 +18,47 @@ body {
   .nav_bar_contents {
     display: none;
   }
+  /* Hamburger menu */
+  .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    background: #3c3a39;
+    height: 100vh;
+    width: 100%;
+  }
+  .mobile_menu a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the default text color */
+    /* Additional styles */
+  }
+  .exit{
+    background-color: #3c3a39;
+    border: none;
+    margin-left: auto;
+  }
+  .mobile_menu hr{
+    color: #6F6C6B;
+    width: 90%;
+    padding: 0px 0px;
+    margin: 15px 25px;
+  }
+  .mobile_menu img{
+    background-color: #3c3a39;
+    width: 40px; /* Adjust the size as needed */
+  }
+ 
+  .mobile_menu ul li {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff5e1;
+    padding: 0px 10px;
+    border-bottom: #6F6C6B;
+    margin-left: 20px;
+  }
 
   /* Navigation Bar Design */
   nav {
@@ -111,7 +152,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 10%;
-    padding-top: 40%;
+    padding-top: 20vh;
     padding-right: 5%;
     background-image: url("images/illustrations.png");
     background-repeat: no-repeat;
