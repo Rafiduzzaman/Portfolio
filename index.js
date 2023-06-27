@@ -20,3 +20,10 @@ navLink.forEach((link) => {
     mobileMenu.classList.add('hidden');
   });
 });
+
+const arr = [{ name: "FirstCard", description: "", featuredImages: "", technologies: [], linktoliveversion: "", linktosource: "" },
+{ name: "", description: "", featuredImages: "", technologies: [], linktoliveversion: "", linktosource: "" },
+{ name: "", description: "", featuredImages: "", technologies: [], linktoliveversion: "", linktosource: "" },
+{ name: "", description: "", featuredImages: "", technologies: [], linktoliveversion: "", linktosource: "" },
+{ name: "", description: "", featuredImages: "", technologies: [], linktoliveversion: "", linktosource: "" },
+{ name: "", description: "", featuredImages: "", technologies: [], linktoliveversion: "", linktosource: "" }];
