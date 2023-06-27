@@ -15,8 +15,106 @@ body {
 
 @media (min-width: 365px) {
   /* Navigation Bar Contents hide for mobile */
+  .navbar.hidden {
+    display: none;
+  }
+
   .nav_bar_contents {
     display: none;
+  }
+
+  .hamburger_menu {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  /* Hamburger menu */
+  .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    background: #3c3a39;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+
+    /* Adjust the value as needed */
+  }
+
+  .mobile_menu.hidden {
+    visibility: hidden;
+    display: none;
+  }
+
+  /* List styles */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile_menu.hidden ul,
+  .mobile_menu.hidden button.exit {
+    display: none;
+  }
+
+  .mobile_menu a {
+    text-decoration: none;
+
+    /* Remove underline */
+    color: inherit;
+
+    /* Use the default text color */
+
+    /* Additional styles */
+  }
+
+  .exit {
+    background-color: #3c3a39;
+    border: none;
+    margin-left: auto;
+    margin-top: 5vh;
+  }
+
+  hr {
+    width: 80%;
+    margin: 10%;
+    position: center;
+  }
+
+  .mobile_menu hr {
+    background: #6f6c6b;
+    width: 90%;
+    padding: 0 0;
+    margin: 0 0 15px 25px;
+  }
+
+  img {
+    background-color: #1c1a19;
+    border: 0;
+  }
+
+  .mobile_menu img {
+    background-color: #3c3a39;
+    width: 35px;
+
+    /* Adjust the size as needed */
+    margin-right: 20px;
+  }
+
+  .mobile_menu ul li {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #fff5e1;
+    padding: 0 10px;
+    border-bottom: #6f6c6b;
+    margin-left: 30px;
+    margin-bottom: 10px;
   }
 
   /* Navigation Bar Design */
@@ -47,13 +145,6 @@ body {
     padding-bottom: 4%;
   }
 
-  /* List styles */
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
   /* social media icons design */
   #sm {
     display: flex;
@@ -63,11 +154,6 @@ body {
     width: 200px;
     height: 40px;
     margin-bottom: 30%;
-  }
-
-  img {
-    background-color: #1c1a19;
-    border: 0;
   }
 
   /* header texts design */
@@ -111,7 +197,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 10%;
-    padding-top: 40%;
+    padding-top: 20vh;
     padding-right: 5%;
     background-image: url("images/illustrations.png");
     background-repeat: no-repeat;
@@ -247,7 +333,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 10%;   
+    margin: 10%;
   }
 
   .about_myself {
@@ -295,12 +381,6 @@ body {
     align-items: center;
     text-align: center;
     color: #fff;
-  }
-
-  hr {
-    width: 80%;
-    margin: 10%;
-    position: center;
   }
 
   .face {
@@ -664,6 +744,10 @@ body {
 }
 
 @media (min-width: 765px) {
+  .mobile_menu {
+    display: none;
+  }
+
   body
   /* Background color */
   #back {
@@ -872,16 +956,23 @@ body {
     margin-bottom: 0%;
     padding-bottom: 0%;
     margin-top: 0%;
-    overflow: hidden; /* to prevent content from overflowing */
+    overflow: hidden;
+
+    /* to prevent content from overflowing */
   }
 
   .animation {
-    transition: transform 0.3s ease; /* smooth transition effect */
+    transition: transform 0.3s ease;
+
+    /* smooth transition effect */
   }
 
   .animation:hover {
-    transform: scale(1.1); /* scale up the element */
+    transform: scale(1.1);
+
+    /* scale up the element */
   }
+
   .container {
     margin: 0 2vh;
     padding: 0% 0%;
@@ -1055,11 +1146,15 @@ body {
   }
 
   .resume_btn {
-      transition: transform 0.3s ease; /* smooth transition effect */
+    transition: transform 0.3s ease;
+
+    /* smooth transition effect */
   }
-    
+
   .resume_btn:hover {
-      transform: scale(1.1); /* scale up the element */
+    transform: scale(1.1);
+
+    /* scale up the element */
   }
 
   .text_2 {
@@ -1163,7 +1258,9 @@ body {
   }
 
   .name-field {
-    flex-basis: calc(50% - 10px); /* Adjust as needed */
+    flex-basis: calc(50% - 10px);
+
+    /* Adjust as needed */
   }
 
   .name-field input {
