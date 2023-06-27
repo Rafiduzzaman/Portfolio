@@ -18,7 +18,7 @@ body {
   .navbar.hidden {
     display: none;
   }
-
+  
   .nav_bar_contents {
     display: none;
   }
@@ -43,6 +43,11 @@ body {
   }
 
   .mobile_menu.hidden {
+    visibility: hidden;
+    display: none;
+  }
+  .mobile_menu.hidden ul,
+  .mobile_menu.hidden button.exit {
     display: none;
   }
 
@@ -61,6 +66,7 @@ body {
     background-color: #3c3a39;
     border: none;
     margin-left: auto;
+    margin-top: 5vh;
   }
 
   hr {
@@ -70,10 +76,10 @@ body {
   }
 
   .mobile_menu hr {
-    color: #6f6c6b;
+    background: #6f6c6b;
     width: 90%;
     padding: 0 0;
-    margin: 15px 25px;
+    margin: 0px 0px 15px 25px;
   }
 
   img {
@@ -83,7 +89,7 @@ body {
 
   .mobile_menu img {
     background-color: #3c3a39;
-    width: 40px;
+    width: 35px;
 
     /* Adjust the size as needed */
     margin-right: 20px;
@@ -99,7 +105,8 @@ body {
     color: #fff5e1;
     padding: 0 10px;
     border-bottom: #6f6c6b;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
   }
 
   /* Navigation Bar Design */
