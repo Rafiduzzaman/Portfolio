@@ -716,14 +716,6 @@ body {
     display: none;
   }
 
-  #first-name {
-    display: none;
-  }
-
-  #last-name {
-    display: none;
-  }
-
   #sm1 {
     display: flex;
     flex-direction: row;
@@ -1248,7 +1240,13 @@ body {
   }
 
   #name {
-    display: none;
+    width: 85%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5%;
+    margin: 0% 0%;
+    
   }
 
   .name-fields {
@@ -1267,25 +1265,6 @@ body {
     width: 100%;
   }
 
-  #first-name {
-    display: block;
-    width: 80%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding: 5%;
-    padding-left: 0%;
-    margin-left: 0%;
-  }
-
-  #last-name {
-    display: block;
-    width: 80%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding: 5%;
-  }
 
   #email {
     width: 92%;
