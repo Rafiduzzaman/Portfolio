@@ -28,8 +28,13 @@ navLink.forEach((link) => {
 const emailInput = document.querySelector("#email");
 const formtag = document.querySelector(".form2");
 
-
-
+formtag.addEventListener("submit", (event) => {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    event.preventDefault();
+    alert("Email must be lowercase");
+  }
+}
+);
 
 //#endregion
 // projects cards
