@@ -37,9 +37,9 @@ formtag.addEventListener('submit', (event) => {
 
 // #endregion
 
-//#region firstname lastname required change
-if
-//#endregion
+// #region firstname lastname required change
+
+// #endregion
 
 // projects cards
 const projects = [
@@ -101,7 +101,7 @@ const projects = [
 
 // select projects list tag from html file
 const projectsListTag = document.querySelector('.projects-list');
-const project = { technologies: ['HTML', 'BootStrap', 'Ruby'] };
+// const project = { technologies: ['HTML', 'BootStrap', 'Ruby'] };
 projects.forEach((project) => {
   // create single card html element
   const projectCard = document.createElement('section');
@@ -137,4 +137,4 @@ projects.forEach((project) => {
 //   </button>
 // `;
 
-projectsListTag.appendChild(projectCardPopup);
+// projectsListTag.appendChild(projectCardPopup);
