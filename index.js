@@ -1,3 +1,38 @@
+//#region
+// hamburger menu
+const navbar = document.querySelector(".navbar");
+const hamburgerMenuBtn = document.querySelector(".hamburger_menu");
+const mobileMenu = document.querySelector(".mobile_menu");
+const exitBtn = document.querySelector(".exit");
+const navLink = document.querySelectorAll(".nav_link");
+
+hamburgerMenuBtn.addEventListener("click", () => {
+  navbar.classList.toggle("hidden");
+  mobileMenu.classList.toggle("hidden");
+});
+
+exitBtn.addEventListener("click", () => {
+  navbar.classList.toggle("hidden");
+  mobileMenu.classList.toggle("hidden");
+});
+
+navLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.toggle("hidden");
+    mobileMenu.classList.add("hidden");
+  });
+});
+//#endregion
+
+//#region validate email lowercase
+const emailInput = document.querySelector("#email");
+const formtag = document.querySelector(".form2");
+
+
+
+
+//#endregion
+// projects cards
 const projects = [
   {
     name: "Profesional Art Printing Data",
@@ -55,35 +90,9 @@ const projects = [
   },
 ];
 
-// hamburger menu
-const navbar = document.querySelector(".navbar");
-const hamburgerMenuBtn = document.querySelector(".hamburger_menu");
-const mobileMenu = document.querySelector(".mobile_menu");
-const exitBtn = document.querySelector(".exit");
-const navLink = document.querySelectorAll(".nav_link");
-
-hamburgerMenuBtn.addEventListener("click", () => {
-  navbar.classList.toggle("hidden");
-  mobileMenu.classList.toggle("hidden");
-});
-
-exitBtn.addEventListener("click", () => {
-  navbar.classList.toggle("hidden");
-  mobileMenu.classList.toggle("hidden");
-});
-
-navLink.forEach((link) => {
-  link.addEventListener("click", () => {
-    navbar.classList.toggle("hidden");
-    mobileMenu.classList.add("hidden");
-  });
-});
-
-// projects cards
-
 // select projects list tag from html file
 const projectsListTag = document.querySelector(".projects-list");
-
+const project = { technologies: ["HTML", "BootStrap", "Ruby"] };
 projects.forEach((project) => {
   // create single card html element
   const projectCard = document.createElement("section");
