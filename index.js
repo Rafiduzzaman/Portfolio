@@ -1,107 +1,106 @@
-//#region
+// #region
 // hamburger menu
-const navbar = document.querySelector(".navbar");
-const hamburgerMenuBtn = document.querySelector(".hamburger_menu");
-const mobileMenu = document.querySelector(".mobile_menu");
-const exitBtn = document.querySelector(".exit");
-const navLink = document.querySelectorAll(".nav_link");
+const navbar = document.querySelector('.navbar');
+const hamburgerMenuBtn = document.querySelector('.hamburger_menu');
+const mobileMenu = document.querySelector('.mobile_menu');
+const exitBtn = document.querySelector('.exit');
+const navLink = document.querySelectorAll('.nav_link');
 
-hamburgerMenuBtn.addEventListener("click", () => {
-  navbar.classList.toggle("hidden");
-  mobileMenu.classList.toggle("hidden");
+hamburgerMenuBtn.addEventListener('click', () => {
+  navbar.classList.toggle('hidden');
+  mobileMenu.classList.toggle('hidden');
 });
 
-exitBtn.addEventListener("click", () => {
-  navbar.classList.toggle("hidden");
-  mobileMenu.classList.toggle("hidden");
+exitBtn.addEventListener('click', () => {
+  navbar.classList.toggle('hidden');
+  mobileMenu.classList.toggle('hidden');
 });
 
 navLink.forEach((link) => {
-  link.addEventListener("click", () => {
-    navbar.classList.toggle("hidden");
-    mobileMenu.classList.add("hidden");
+  link.addEventListener('click', () => {
+    navbar.classList.toggle('hidden');
+    mobileMenu.classList.add('hidden');
   });
 });
-//#endregion
+// #endregion
 
-//#region validate email lowercase
-const emailInput = document.querySelector("#email");
-const formtag = document.querySelector(".form2");
+// #region validate email lowercase
+const emailInput = document.querySelector('#email');
+const formtag = document.querySelector('.form2');
 
-formtag.addEventListener("submit", (event) => {
+formtag.addEventListener('submit', (event) => {
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     event.preventDefault();
-    alert("Email must be lowercase");
+    alert('Email must be lowercase');
   }
-}
-);
+});
 
-//#endregion
+// #endregion
 // projects cards
 const projects = [
   {
-    name: "Profesional Art Printing Data",
+    name: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: "",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImages: '',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art Printing Data",
+    name: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: "",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImages: '',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art Printing Data",
+    name: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: "",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImages: '',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art Printing Data",
+    name: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: "",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImages: '',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art Printing Data",
+    name: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: "",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImages: '',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art Printing Data",
+    name: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: "",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImages: '',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
 ];
 
 // select projects list tag from html file
-const projectsListTag = document.querySelector(".projects-list");
-const project = { technologies: ["HTML", "BootStrap", "Ruby"] };
+const projectsListTag = document.querySelector('.projects-list');
+const project = { technologies: ['HTML', 'BootStrap', 'Ruby'] };
 projects.forEach((project) => {
   // create single card html element
-  const projectCard = document.createElement("section");
-  projectCard.classList.add("ex1");
+  const projectCard = document.createElement('section');
+  projectCard.classList.add('ex1');
   projectCard.innerHTML = `
     <h2 class="header-2">${project.name}</h2>
     <p class="para-2">${project.description}</p>
@@ -117,9 +116,9 @@ projects.forEach((project) => {
   projectsListTag.appendChild(projectCard);
 });
 
-const projectCardPopup = document.createElement("section");
-projectCardPopup.classList.add("project-card-popup");
-projectCardPopup.classList.add("hidden");
+const projectCardPopup = document.createElement('section');
+projectCardPopup.classList.add('project-card-popup');
+projectCardPopup.classList.add('hidden');
 projectCardPopup.innerHTML = `
   <h2 class="header-2">${project.name}</h2>
   <p class="para-2">${project.description}</p>
