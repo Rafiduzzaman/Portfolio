@@ -44,7 +44,7 @@ formtag.addEventListener('submit', (event) => {
 // projects cards
 const projects = [
   {
-    name: 'Profesional Art Printing Data',
+    name: 'Profesional Art Printing Data 6',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     featuredImages: '',
@@ -53,7 +53,7 @@ const projects = [
     linktosource: '',
   },
   {
-    name: 'Profesional Art Printing Data',
+    name: 'Profesional Art Printing Data 5',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     featuredImages: '',
@@ -62,7 +62,7 @@ const projects = [
     linktosource: '',
   },
   {
-    name: 'Profesional Art Printing Data',
+    name: 'Profesional Art Printing Data 4',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     featuredImages: '',
@@ -71,7 +71,7 @@ const projects = [
     linktosource: '',
   },
   {
-    name: 'Profesional Art Printing Data',
+    name: 'Profesional Art Printing Data 3',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     featuredImages: '',
@@ -80,7 +80,7 @@ const projects = [
     linktosource: '',
   },
   {
-    name: 'Profesional Art Printing Data',
+    name: 'Profesional Art 2',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     featuredImages: '',
@@ -89,7 +89,7 @@ const projects = [
     linktosource: '',
   },
   {
-    name: 'Profesional Art Printing Data',
+    name: 'Profesional Art 1',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     featuredImages: '',
@@ -115,7 +115,7 @@ popupWindow.innerHTML = `
     </ul>
     </div>
     <div class="popup_window_right">
-    <img src="images/Snapshoot Portfolio.jpg" alt="">
+    <img src="images/Snapshoot Portfolio.jpg" alt="" class="popup-img">
     </div>
     <div class="middle">
     <p class="popup_window_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
@@ -133,6 +133,12 @@ const popupWindowCloseBtn = popupWindow.querySelector('.popup_window_close');
 popupWindowCloseBtn.addEventListener('click', ()=>{
   popupWindow.classList.toggle('hide');
 });
+
+const populatePopupData = (project) => {
+  popupWindow.querySelector('.popup_window_header').innerHTML = project.name;
+  popupWindow.querySelector('.popup_window_para').innerHTML = project.description;
+  popupWindow.querySelector('.popup-img').src = project.featuredImage;
+};
 
 // select projects list tag from html file
 const projectsListTag = document.querySelector('.projects-list');
@@ -153,7 +159,14 @@ projects.forEach((project) => {
       See Project
     </button>
   `;
-  projectCard.querySelector('.btn-5').addEventListener('click', ()=>{
+  projectCard.querySelector('.btn-5').addEventListener('click', (e)=> {
+    const projectCard = e.target.closest('ex1');
+    if (projectCard) {
+      const projectName = projectCard.querySelector('.header-2').textContent;
+      const project = projects.find((proj) => proj.name === projectName);
+      populatePopupData(project);
+      popupWindow.classList.toggle('hide');
+    }
     popupWindow.classList.toggle('hide');
   });
   projectsListTag.appendChild(projectCard);
