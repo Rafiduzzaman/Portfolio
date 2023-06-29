@@ -99,6 +99,41 @@ const projects = [
   },
 ];
 
+
+const popupWindow = document.querySelector('.popup_window');
+popupWindow.classList.add('hide');
+popupWindow.innerHTML = `
+  <div class="top">
+    <h1 class="popup_window_header">Multi Post Stories</h1>
+    <button class="popup_window_close">X</button>
+    </div>
+    <div class="options">
+    <ul class="popup_window_apps">
+      <li class="popup_window_item">HTML</li>
+      <li class="popup_window_item">BootStrap</li>
+      <li class="popup_window_item">Ruby</li>
+    </ul>
+    </div>
+    <div class="popup_window_right">
+    <img src="images/Snapshoot Portfolio.jpg" alt="">
+    </div>
+    <div class="middle">
+    <p class="popup_window_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
+    <div class="pop_upbuttons">
+      <div class="popup_button">
+        <button class="popup_window_btn">See Live</button>
+      </div>
+      <div class="popup_button">
+        <button class="popup_window_btn">See Source</button>
+      </div>
+    </div>
+  </div>
+`
+const popupWindowCloseBtn = popupWindow.querySelector('.popup_window_close');
+popupWindowCloseBtn.addEventListener('click', ()=>{
+  popupWindow.classList.toggle('hide');
+});
+
 // select projects list tag from html file
 const projectsListTag = document.querySelector('.projects-list');
 // const project = { technologies: ['HTML', 'BootStrap', 'Ruby'] };
@@ -118,6 +153,9 @@ projects.forEach((project) => {
       See Project
     </button>
   `;
+  projectCard.querySelector('.btn-5').addEventListener('click', ()=>{
+    popupWindow.classList.toggle('hide');
+  });
   projectsListTag.appendChild(projectCard);
 });
 
