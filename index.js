@@ -181,3 +181,10 @@ popupExitBtn.addEventListener('click', () => {
 projectCards.forEach((card) => {
   card.querySelector('.btn-5').addEventListener('click', togglePopupWindow);
 });
+
+document.querySelectorAll('.btn-5.desktop').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    console.log("clicked ...")
+    togglePopupWindow();
+  });
+})

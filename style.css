@@ -1154,8 +1154,18 @@ body {
     margin: 10px 10px;
   }
 
-  #mob_ver {
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .btn-5 {
     display: none;
+  }
+
+  .ex1:hover .btn-5 {
+    display: block;
   }
 
   .ex1 {
