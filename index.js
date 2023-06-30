@@ -99,7 +99,6 @@ const projects = [
   },
 ];
 
-
 const popupWindow = document.querySelector('.popup_window');
 popupWindow.classList.add('hide');
 popupWindow.innerHTML = `
@@ -111,7 +110,7 @@ popupWindow.innerHTML = `
     <ul class="popup_window_apps">
       <li class="popup_window_item">HTML</li>
       <li class="popup_window_item">BootStrap</li>
-      <li class="popup_window_item">Ruby</li>
+      <li class="popup_window_item">Ruby on Rails</li>
     </ul>
     </div>
     <div class="popup_window_right">
@@ -128,9 +127,9 @@ popupWindow.innerHTML = `
       </div>
     </div>
   </div>
-`
+`;
 const popupWindowCloseBtn = popupWindow.querySelector('.popup_window_close');
-popupWindowCloseBtn.addEventListener('click', ()=>{
+popupWindowCloseBtn.addEventListener('click', () => {
   popupWindow.classList.toggle('hide');
 });
 
@@ -159,13 +158,14 @@ projects.forEach((project) => {
       See Project
     </button>
   `;
-  projectCard.querySelector('.btn-5').addEventListener('click', (e)=> {
+  projectCard.querySelector('.btn-5').addEventListener('click', (e) => {
     const projectCard = e.target.closest('ex1');
     if (projectCard) {
       const projectName = projectCard.querySelector('.header-2').textContent;
       const project = projects.find((proj) => proj.name === projectName);
       populatePopupData(project);
       popupWindow.classList.toggle('hide');
+      document.body.classList.add('blur-background');
     }
     popupWindow.classList.toggle('hide');
   });
