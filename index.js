@@ -1,37 +1,37 @@
 // #region
 // hamburger menu
-const navbar = document.querySelector(".navbar");
-const hamburgerMenuBtn = document.querySelector(".hamburger_menu");
-const mobileMenu = document.querySelector(".mobile_menu");
-const exitBtn = document.querySelector(".exit");
-const navLink = document.querySelectorAll(".nav_link");
+const navbar = document.querySelector('.navbar');
+const hamburgerMenuBtn = document.querySelector('.hamburger_menu');
+const mobileMenu = document.querySelector('.mobile_menu');
+const exitBtn = document.querySelector('.exit');
+const navLink = document.querySelectorAll('.nav_link');
 
-hamburgerMenuBtn.addEventListener("click", () => {
-  navbar.classList.toggle("hidden");
-  mobileMenu.classList.toggle("hidden");
+hamburgerMenuBtn.addEventListener('click', () => {
+  navbar.classList.toggle('hidden');
+  mobileMenu.classList.toggle('hidden');
 });
 
-exitBtn.addEventListener("click", () => {
-  navbar.classList.toggle("hidden");
-  mobileMenu.classList.toggle("hidden");
+exitBtn.addEventListener('click', () => {
+  navbar.classList.toggle('hidden');
+  mobileMenu.classList.toggle('hidden');
 });
 
 navLink.forEach((link) => {
-  link.addEventListener("click", () => {
-    navbar.classList.toggle("hidden");
-    mobileMenu.classList.add("hidden");
+  link.addEventListener('click', () => {
+    navbar.classList.toggle('hidden');
+    mobileMenu.classList.add('hidden');
   });
 });
 // #endregion
 
 // #region validate email lowercase
-const emailInput = document.querySelector("#email");
-const formtag = document.querySelector(".form2");
+const emailInput = document.querySelector('#email');
+const formtag = document.querySelector('.form2');
 
-formtag.addEventListener("submit", (event) => {
+formtag.addEventListener('submit', (event) => {
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     event.preventDefault();
-    alert("Email must be lowercase");
+    alert('Email must be lowercase');
   }
 });
 
@@ -44,68 +44,68 @@ formtag.addEventListener("submit", (event) => {
 // projects cards
 const projects = [
   {
-    name: "Profesional Art Printing Data 6",
+    name: 'Profesional Art Printing Data 6',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImage: "images/exc.png",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImage: 'images/exc.png',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art Printing Data 5",
+    name: 'Profesional Art Printing Data 5',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImage: "images/sada1.png",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImage: 'images/sada1.png',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art Printing Data 4",
+    name: 'Profesional Art Printing Data 4',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImage: "images/sada2.png",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImage: 'images/sada2.png',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art Printing Data 3",
+    name: 'Profesional Art Printing Data 3',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImage: "images/sada.png",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImage: 'images/sada.png',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art 2",
+    name: 'Profesional Art 2',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImage: "images/sada1.png",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImage: 'images/sada1.png',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
   {
-    name: "Profesional Art 1",
+    name: 'Profesional Art 1',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImage: "images/sada2.png",
-    technologies: ["HTML", "BootStrap", "Ruby"],
-    linktoliveversion: "",
-    linktosource: "",
+    featuredImage: 'images/sada2.png',
+    technologies: ['HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
   },
 ];
 
-const popupWindow = document.querySelector(".popup_window");
-popupWindow.classList.add("hide");
+const popupWindow = document.querySelector('.popup_window');
+popupWindow.classList.add('hide');
 popupWindow.innerHTML = `
 <div class="parent_pop">
-  <div class="top">
-    <h1 class="popup_window_header">Multi Post Stories</h1>
-    <button class="popup_window_close">X</button>
+    <div class="top">
+      <h1 class="popup_window_header">Multi Post Stories</h1>
+      <button class="popup_window_close">X</button>
     </div>
     
     <div class="options">
@@ -135,19 +135,18 @@ popupWindow.innerHTML = `
 `;
 
 const populatePopupData = (project) => {
-  popupWindow.querySelector(".popup_window_header").innerHTML = project.name;
-  popupWindow.querySelector(".popup_window_para").innerHTML =
-    project.description;
-  popupWindow.querySelector(".popup-img").src = project.featuredImage;
+  popupWindow.querySelector('.popup_window_header').innerHTML = project.name;
+  popupWindow.querySelector('.popup_window_para').innerHTML = project.description;
+  popupWindow.querySelector('.popup-img').src = project.featuredImage;
 };
 
 // select projects list tag from html file
-const projectsListTag = document.querySelector(".projects-list");
+const projectsListTag = document.querySelector('.projects-list');
 projects.forEach((project, index) => {
   // create single card html element
-  const projectCard = document.createElement("section");
-  projectCard.classList.add("ex1");
-  if (index == 0) {
+  const projectCard = document.createElement('section');
+  projectCard.classList.add('ex1');
+  if (index === 0) {
     projectCard.innerHTML = `
     <div class="project_card_container">
     <h2 class="header-2">${project.name}</h2>
@@ -162,8 +161,7 @@ projects.forEach((project, index) => {
       See Project
     </button>
   `;
-    projectCard.querySelector(".btn-5").classList.add("card1");
-  
+    projectCard.querySelector('.btn-5').classList.add('card1');
   } else {
     projectCard.innerHTML = `
     <div >
@@ -185,32 +183,29 @@ projects.forEach((project, index) => {
   projectsListTag.appendChild(projectCard);
 });
 
-const popupExitBtn = document.querySelector(".popup_window_close");
-console.log(popupExitBtn);
-const projectCards = document.querySelectorAll(".ex1");
-console.log(projectCards);
+const popupExitBtn = document.querySelector('.popup_window_close');
+const projectCards = document.querySelectorAll('.ex1');
 
 const togglePopupWindow = (e) => {
-  const projectCard = e.target.closest(".ex1");
+  const projectCard = e.target.closest('.ex1');
   if (projectCard) {
-    const projectName = projectCard.querySelector(".header-2").textContent;
+    const projectName = projectCard.querySelector('.header-2').textContent;
     const project = projects.find((proj) => proj.name === projectName);
     populatePopupData(project);
-    popupWindow.classList.toggle("hide");
+    popupWindow.classList.toggle('hide');
   }
 };
 
-popupExitBtn.addEventListener("click", () => {
-  popupWindow.classList.toggle("hide");
+popupExitBtn.addEventListener('click', () => {
+  popupWindow.classList.toggle('hide');
 });
 
 projectCards.forEach((card) => {
-  card.querySelector(".btn-5").addEventListener("click", togglePopupWindow);
+  card.querySelector('.btn-5').addEventListener('click', togglePopupWindow);
 });
 
-document.querySelectorAll(".btn-5.desktop").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    console.log("clicked ...");
+document.querySelectorAll('.btn-5.desktop').forEach((btn) => {
+  btn.addEventListener('click', () => {
     togglePopupWindow();
   });
 });
