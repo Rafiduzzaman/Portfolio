@@ -704,6 +704,7 @@ body {
     border: none;
     border: 2px solid transparent;
   }
+  
 
   #texts-1 {
     padding: 0%;
@@ -1115,7 +1116,9 @@ body {
     padding-bottom: 0%;
     border-top: 1px solid black;
   }
-
+  .project_card_container{
+    opacity: 0;
+  }
   #works {
     display: flex;
     width: 85%;
@@ -1197,6 +1200,10 @@ body {
 
   .btn-5 {
     display: none;
+  }
+  .btn-5.card1 {
+    display: block;
+    height: ;
   }
 
   .ex1:hover .btn-5 {
