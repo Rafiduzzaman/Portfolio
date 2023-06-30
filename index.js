@@ -162,9 +162,9 @@ projects.forEach((project) => {
 });
 
 const popupExitBtn = document.querySelector('.popup_window_close');
-console.log(popupExitBtn)
+console.log(popupExitBtn);
 const projectCards = document.querySelectorAll('.ex1');
-console.log(projectCards)
+console.log(projectCards);
 
 const togglePopupWindow = (e) => {
   const projectCard = e.target.closest('.ex1');
@@ -184,9 +184,9 @@ projectCards.forEach((card) => {
   card.querySelector('.btn-5').addEventListener('click', togglePopupWindow);
 });
 
-document.querySelectorAll('.btn-5.desktop').forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    console.log("clicked ...")
+document.querySelectorAll('.btn-5.desktop').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    console.log('clicked ...');
     togglePopupWindow();
   });
-})
+});
