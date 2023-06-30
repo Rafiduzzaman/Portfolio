@@ -205,23 +205,23 @@ body {
   /* Popup window */
   .popup_window {
     display: flex;
-    width: 90%;
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
     border: #1c1a19;
     flex-direction: column;
+    backdrop-filter: blur(5px);
     align-items: center;
-    background-color: aquamarine;
+    background-color: #979493c9;
     padding-bottom: 30px;
     margin-bottom: 30px;
     margin-right: 20px;
     position: fixed; /* Position the div relative to the viewport */
     top: 50%; /* Move the top edge to the middle of the screen */
     left: 50%; /* Move the left edge to the middle of the screen */
-    transform:
-      translate(
-        -50%,
-        -50%
-      ); /* Translate the div back by half its width and height */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Translate the div back by half its width and height */
   }
 
   .popup_window_close {
@@ -238,7 +238,7 @@ body {
   .top {
     display: flex;
     width: 80%;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     margin-top: 24px;
     padding-bottom: 30px;
@@ -255,7 +255,19 @@ body {
   .blur-background {
     filter: blur(8px);
   }
-
+  .parent_pop{
+    display: flex;
+    /* filter: blur(8px); */
+    width: 90%;
+    height: 90vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+  }
   .popup_window_header {
     font-family: "Roboto", sans-serif;
     font-size: 32px;
@@ -293,9 +305,28 @@ body {
   .pop_upbuttons {
     display: flex;
     padding-left: 30px;
+    justify-content: space-evenly;
   }
 
-
+  .popup_window_btn {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #ff6b00;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    height: 48px;
+    justify-content: center;
+    border: none;
+    border: 2px solid transparent;
+    align-items: center;
+  }
+  .popup_window_btn img {
+    background-color: transparent;
+    padding: 0px 15px;
+  }
 
   .popup_window_header h1 {
     color: #172b4d;

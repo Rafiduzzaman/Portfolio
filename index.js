@@ -102,6 +102,7 @@ const projects = [
 const popupWindow = document.querySelector('.popup_window');
 popupWindow.classList.add('hide');
 popupWindow.innerHTML = `
+<div class="parent_pop">
   <div class="top">
     <h1 class="popup_window_header">Multi Post Stories</h1>
     <button class="popup_window_close">X</button>
@@ -120,12 +121,14 @@ popupWindow.innerHTML = `
     <p class="popup_window_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
     <div class="pop_upbuttons">
       <div class="popup_button">
-        <button class="popup_window_btn">See Live</button>
+        <button class="popup_window_btn">See Live <img src="images/Icon.png" alt="icon"></button>
+        
       </div>
       <div class="popup_button">
-        <button class="popup_window_btn">See Source</button>
+        <button class="popup_window_btn">See Source<img src="images/Frame23.png" alt="icon"></button>
       </div>
     </div>
+  </div>
   </div>
 `;
 
