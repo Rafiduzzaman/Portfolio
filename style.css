@@ -264,7 +264,7 @@ body {
     filter: blur(8px);
   }
 
-  section#mob_ver{
+  section#mob_ver {
     margin: 16px;
   }
 
@@ -678,6 +678,7 @@ body {
     padding-bottom: 62px;
     position: relative;
     margin-bottom: 2%;
+
     /* width: 327px; */
     flex-direction: column;
     align-items: flex-start;
@@ -716,7 +717,6 @@ body {
     border: none;
     border: 2px solid transparent;
   }
-  
 
   #texts-1 {
     padding: 0%;
@@ -982,11 +982,11 @@ body {
   }
 
   .popup_window .popup_window_header {
-    font-family: "Crete Round";
+    font-family: "Crete Round", sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -1146,9 +1146,11 @@ body {
     padding-bottom: 0%;
     border-top: 1px solid black;
   }
-  .project_card_container{
+
+  .project_card_container {
     opacity: 0;
   }
+
   #works {
     display: flex;
     width: 85%;
@@ -1226,7 +1228,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    width:85%;
+    width: 85%;
   }
 
   .btn-5 {
@@ -1551,4 +1553,3 @@ body {
     color: #fff;
   }
 }
-
