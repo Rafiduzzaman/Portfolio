@@ -107,6 +107,7 @@ popupWindow.innerHTML = `
     <h1 class="popup_window_header">Multi Post Stories</h1>
     <button class="popup_window_close">X</button>
     </div>
+    
     <div class="options">
     <ul class="popup_window_apps">
       <li class="popup_window_item">HTML</li>
@@ -114,6 +115,7 @@ popupWindow.innerHTML = `
       <li class="popup_window_item">Ruby on Rails</li>
     </ul>
     </div>
+    <div class="popup_window_left">
     <div class="popup_window_right">
     <img src="images/Snapshoot Portfolio.jpg" alt="" class="popup-img">
     </div>
@@ -122,11 +124,11 @@ popupWindow.innerHTML = `
     <div class="pop_upbuttons">
       <div class="popup_button">
         <button class="popup_window_btn">See Live <img src="images/Icon.png" alt="icon"></button>
-        
       </div>
       <div class="popup_button">
         <button class="popup_window_btn">See Source<img src="images/Frame23.png" alt="icon"></button>
       </div>
+    </div>
     </div>
   </div>
   </div>

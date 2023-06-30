@@ -874,6 +874,24 @@ body {
     justify-content: center;
     margin: 0% 50px;
   }
+  .popup_window_btn:hover {
+    border-color: #f55800;
+    background-color: #fff5e1;
+    text-emphasis-color: orange;
+    color: #f55800;
+    
+  }
+
+  .popup_window_btn:active {
+    background-color: #f55800;
+    color: #f4f1f0;
+  }
+
+  .popup_window_btn:disabled {
+    background-color: #f4f1f0;
+    cursor: not-allowed;
+    color: #5b5957;
+  }
 }
 
 @media (min-width: 765px) {
@@ -1167,7 +1185,27 @@ body {
   .ex1:hover .btn-5 {
     display: block;
   }
-
+  .top{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+  .popup_window_apps{
+    margin: 0% 0% 30px 0%;
+    padding: 0% 0%;
+  }
+  .popup_window_left{
+    display: flex;
+    width: 80%;
+  }
+  .middle {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+  .popup_window_right img{
+    Width:    659px;
+    Height:    448px;
+  }
   .ex1 {
     display: flex;
     background: url(images/sada.png);
