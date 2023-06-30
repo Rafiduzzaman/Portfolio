@@ -102,7 +102,10 @@ body {
     /* Adjust the size as needed */
     margin-right: 20px;
   }
-
+  .popup_window_right {
+   display: flex;
+   justify-content: center;
+  }
   .options li {
     display: inline-block;
     border: 1px solid #979493;
@@ -879,7 +882,7 @@ body {
     background-color: #fff5e1;
     text-emphasis-color: orange;
     color: #f55800;
-    
+
   }
 
   .popup_window_btn:active {
@@ -1119,7 +1122,7 @@ body {
   }
 
   .animation:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 
     /* scale up the element */
   }
