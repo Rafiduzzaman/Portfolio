@@ -47,7 +47,7 @@ const projects = [
     name: 'Profesional Art Printing Data 6',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: '',
+    featuredImage: 'https://www.iitb.ac.in/sites/www.iitb.ac.in/files/reshigh/2022-06/pic.jpg',
     technologies: ['HTML', 'BootStrap', 'Ruby'],
     linktoliveversion: '',
     linktosource: '',
@@ -56,7 +56,7 @@ const projects = [
     name: 'Profesional Art Printing Data 5',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: '',
+    featuredImage: 'https://www.iitb.ac.in/sites/www.iitb.ac.in/files/reshigh/2022-06/pic.jpg',
     technologies: ['HTML', 'BootStrap', 'Ruby'],
     linktoliveversion: '',
     linktosource: '',
@@ -65,7 +65,7 @@ const projects = [
     name: 'Profesional Art Printing Data 4',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: '',
+    featuredImage: 'https://www.iitb.ac.in/sites/www.iitb.ac.in/files/reshigh/2022-06/pic.jpg',
     technologies: ['HTML', 'BootStrap', 'Ruby'],
     linktoliveversion: '',
     linktosource: '',
@@ -74,7 +74,7 @@ const projects = [
     name: 'Profesional Art Printing Data 3',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: '',
+    featuredImage: 'https://www.iitb.ac.in/sites/www.iitb.ac.in/files/reshigh/2022-06/pic.jpg',
     technologies: ['HTML', 'BootStrap', 'Ruby'],
     linktoliveversion: '',
     linktosource: '',
@@ -83,7 +83,7 @@ const projects = [
     name: 'Profesional Art 2',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: '',
+    featuredImage: 'https://www.iitb.ac.in/sites/www.iitb.ac.in/files/reshigh/2022-06/pic.jpg',
     technologies: ['HTML', 'BootStrap', 'Ruby'],
     linktoliveversion: '',
     linktosource: '',
@@ -92,7 +92,7 @@ const projects = [
     name: 'Profesional Art 1',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    featuredImages: '',
+    featuredImage: 'https://www.iitb.ac.in/sites/www.iitb.ac.in/files/reshigh/2022-06/pic.jpg',
     technologies: ['HTML', 'BootStrap', 'Ruby'],
     linktoliveversion: '',
     linktosource: '',
@@ -128,10 +128,6 @@ popupWindow.innerHTML = `
     </div>
   </div>
 `;
-const popupWindowCloseBtn = popupWindow.querySelector('.popup_window_close');
-popupWindowCloseBtn.addEventListener('click', () => {
-  popupWindow.classList.toggle('hide');
-});
 
 const populatePopupData = (project) => {
   popupWindow.querySelector('.popup_window_header').innerHTML = project.name;
@@ -141,7 +137,6 @@ const populatePopupData = (project) => {
 
 // select projects list tag from html file
 const projectsListTag = document.querySelector('.projects-list');
-// const project = { technologies: ['HTML', 'BootStrap', 'Ruby'] };
 projects.forEach((project) => {
   // create single card html element
   const projectCard = document.createElement('section');
@@ -158,34 +153,28 @@ projects.forEach((project) => {
       See Project
     </button>
   `;
-  projectCard.querySelector('.btn-5').addEventListener('click', (e) => {
-    const projectCard = e.target.closest('ex1');
-    if (projectCard) {
-      const projectName = projectCard.querySelector('.header-2').textContent;
-      const project = projects.find((proj) => proj.name === projectName);
-      populatePopupData(project);
-      popupWindow.classList.toggle('hide');
-      document.body.classList.add('blur-background');
-    }
-    popupWindow.classList.toggle('hide');
-  });
   projectsListTag.appendChild(projectCard);
 });
 
-// const projectCardPopup = document.createElement('section');
-// projectCardPopup.classList.add('project-card-popup');
-// projectCardPopup.classList.add('hidden');
-// projectCardPopup.innerHTML = `
-//   <h2 class="header-2">${project.name}</h2>
-//   <p class="para-2">${project.description}</p>
-//   <ul class="apps-1">
-//     <li class="i">${project.technologies[0]}</li>
-//     <li class="i">${project.technologies[1]}</li>
-//     <li class="i">${project.technologies[2]}</li>
-//   </ul>
-//   <button class="btn-5">
-//     See Project
-//   </button>
-// `;
+const popupExitBtn = document.querySelector('.popup_window_close');
+console.log(popupExitBtn)
+const projectCards = document.querySelectorAll('.ex1');
+console.log(projectCards)
 
-// projectsListTag.appendChild(projectCardPopup);
+const togglePopupWindow = (e) => {
+  const projectCard = e.target.closest('.ex1');
+  if (projectCard) {
+    const projectName = projectCard.querySelector('.header-2').textContent;
+    const project = projects.find((proj) => proj.name === projectName);
+    populatePopupData(project);
+    popupWindow.classList.toggle('hide');
+  }
+};
+
+popupExitBtn.addEventListener('click', () => {
+  popupWindow.classList.toggle('hide');
+});
+
+projectCards.forEach((card) => {
+  card.querySelector('.btn-5').addEventListener('click', togglePopupWindow);
+});
