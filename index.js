@@ -166,7 +166,7 @@ projects.forEach((project, index) => {
   
   } else {
     projectCard.innerHTML = `
-    <div class="project_card_container">
+    <div >
     <h2 class="header-2">${project.name}</h2>
     <p class="para-2">${project.description}</p>
     <ul class="apps-1">

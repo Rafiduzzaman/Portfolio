@@ -393,6 +393,7 @@ body {
   }
 
   .container {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1120,6 +1121,7 @@ body {
     opacity: 0;
   }
   #works {
+    
     display: flex;
     width: 85%;
     align-items: flex-start;
@@ -1196,6 +1198,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+    width:85%;
   }
 
   .btn-5 {
