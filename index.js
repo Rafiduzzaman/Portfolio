@@ -213,7 +213,6 @@ projectWork.innerHTML = `
 projectWork.querySelector('#btn_1').addEventListener('click', () => {
   popupWindow.classList.toggle('hide');
 });
-console.log(projectWorkCard);
 
 const popupExitBtn = document.querySelector('.popup_window_close');
 const projectCards = document.querySelectorAll('.ex1');
