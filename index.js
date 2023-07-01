@@ -97,6 +97,14 @@ const projects = [
     linktoliveversion: '',
     linktosource: '',
   },
+  {
+    name: 'Multi-Post Stories',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    featuredImage: 'images/ImgPlaceholder.png',
+    technologies: ['CSS', 'HTML', 'BootStrap', 'Ruby'],
+    linktoliveversion: '',
+    linktosource: '',
+  },
 ];
 
 const popupWindow = document.querySelector('.popup_window');
@@ -142,7 +150,8 @@ const populatePopupData = (project) => {
 
 // select projects list tag from html file
 const projectsListTag = document.querySelector('.projects-list');
-projects.forEach((project, index) => {
+for (let index = 0; index < projects.length - 1; index = +1) {
+  const project = projects[index];
   // create single card html element
   const projectCard = document.createElement('section');
   projectCard.classList.add('ex1');
@@ -179,9 +188,32 @@ projects.forEach((project, index) => {
   `;
   }
   projectCard.style.backgroundImage = `url(${project.featuredImage})`;
-
   projectsListTag.appendChild(projectCard);
+}
+// create single card html element
+const projectWorkCard = projects[projects.length - 1];
+const projectWork = document.querySelector('#works');
+
+projectWork.innerHTML = `
+<img class="animation" src=${projectWorkCard.featuredImage} alt="">
+<div class="container">
+  <p id="m">${projectWorkCard.name}</p>
+  <p id="description">${projectWorkCard.description}</p>
+  <div class="box">
+    <ul id="apps">
+      <li>${projectWorkCard.technologies[0]}</li>
+      <li>${projectWorkCard.technologies[1]}</li>
+      <li>${projectWorkCard.technologies[2]}</li>
+      <li>${projectWorkCard.technologies[3]}</li>      
+    </ul>
+  </div>
+  <button id="btn_1">See Project</button>
+</div>
+ `;
+projectWork.querySelector('#btn_1').addEventListener('click', () => {
+  popupWindow.classList.toggle('hide');
 });
+console.log(projectWorkCard);
 
 const popupExitBtn = document.querySelector('.popup_window_close');
 const projectCards = document.querySelectorAll('.ex1');
