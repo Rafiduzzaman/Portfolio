@@ -150,7 +150,7 @@ const populatePopupData = (project) => {
 
 // select projects list tag from html file
 const projectsListTag = document.querySelector('.projects-list');
-for (let index = 0; index < projects.length - 1; index +=1) {
+for (let index = 0; index < projects.length - 1; index += 1) {
   const project = projects[index];
   // create single card html element
   const projectCard = document.createElement('section');
